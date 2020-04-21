@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: page
 title: About
 ---
 
-# About page
+# About me
 
 This page tells you a little bit about me.
