@@ -12,6 +12,9 @@
   .container {
     width: 95vw;
   }
+  body {
+    font-size: $body-font-size-mobile;
+  }
 }
 
 .post {
