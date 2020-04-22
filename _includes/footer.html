@@ -1,9 +1,0 @@
-<footer class="footer">
-  {% for item in site.data.settings.social %}
-    {% if item.icon == "rss" %}
-	  <a href="{{ site.baseurl }}{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-	{% else %}
-      <a href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-    {% endif %}
-  {% endfor %}
-</footer>

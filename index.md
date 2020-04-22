@@ -1,6 +1,6 @@
 ---
-layout: post
-title: "Text Formatting Examples"
+layout: default
+title: Typography
 ---
 
 # Markdown Support
@@ -68,7 +68,7 @@ print_hi('Tom')
 
 To add an image, use `![alt text](<Image url>)`:
 
-![alt text]({{ site.baseurl }}/assets/img/example.jpg)
+![alt text]({{ site.baseurl }}/img/example.jpg)
 
 ## Unordered and Numbered Lists
 
@@ -104,7 +104,7 @@ Numbered lists are made by using numbers instead of bullet points.
 
 ## MathJax Example
 
-The [Schrödinger equation](https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation) is a partial differential equation that describes how the quantum state of a quantum system changes with time:
+The [Schr枚dinger equation](https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation) is a partial differential equation that describes how the quantum state of a quantum system changes with time:
 
 $$
 i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ \frac{-\hbar^2}{2\mu}\nabla^2 + V(\mathbf{r},t)\right ] \Psi(\mathbf{r},t)

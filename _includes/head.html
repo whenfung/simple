@@ -1,35 +1,18 @@
 <head>
-  <title>
-    {% if page.title == "Home" %}
-  	  {{ site.title }} | {{ site.description }}
-  	{% else %}
-  	  {{ page.title }} | {{ site.title }}
-  	{% endif %}
-  </title>
+  <title>{{ page.title }}</title>
   
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css" />
-  
-  <!-- Use Atom -->
-  {% feed_meta %}
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css" />
 
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
     MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']]
-        }
-      });
+      tex2jax: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    });
   </script>  
-  
-  <!-- Use Jekyll SEO plugin -->
-  {% seo %}
 </head>

@@ -1,0 +1,20 @@
+---
+# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
+---
+
+//       _                    _       
+//  ___ (_) _ __ ___   _ __  | |  ___ 
+// / __|| || '_ ` _ \ | '_ \ | | / _ \
+// \__ \| || | | | | || |_) || ||  __/
+// |___/|_||_| |_| |_|| .__/ |_| \___|
+//                    |_|                                                                                         
+//
+// Designed, built, and released under MIT license by @professordeng. Learn more at
+// https://github.com/professordeng/simple.
+
+@import "variables";
+@import "base";
+@import "type";
+@import "syntax";
+@import "layout";

@@ -1,2 +1,2 @@
 # simple
-Jekyll 主题
+Jekyll theme

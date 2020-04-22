@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  color: $body-color;
+  background-color: $body-bg;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: $img-border-radius;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: .25rem .5rem;
+  text-align: left;
+}

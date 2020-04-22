@@ -1,12 +1,2 @@
 url: https://professordeng.com
 baseurl: /simple
-  
-# 订阅设置
-title: Simple
-description: a Jekyll theme
-author: Professordeng
-
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
