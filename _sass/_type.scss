@@ -4,23 +4,23 @@
 
 h1, h2, h3, h4, h5, h6 {
   color: $heading-color;
-  font-weight: 600;
+  font-weight: $heading-weight;
   line-height: 1.25;
   margin-bottom: .5rem;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: $h1-font-size;
 }
 
 h2 {
   margin-top: 1.5rem;
-  font-size: 1.5rem;
+  font-size: $h2-font-size;
 }
 
 h3 {
   margin-top: 1rem;
-  font-size: 1.25rem;
+  font-size: $h3-font-size;
 }
 
 h4, h5, h6 {
@@ -41,9 +41,16 @@ ul, ol, dl {
 
 blockquote {
   margin: .8rem 0;
-  padding: .5rem .5rem;
+  padding: .5rem 1rem;
   color: $blockquote-color;
   border-left: .25rem solid $blockquote-border-left;
+
+  margin-left: -0.5rem;
+  width: calc(100% + 1rem);
+  @media (min-width: 38rem) {
+    margin-left: 0;
+    width: 100%;
+  }
 
   p:last-child {
     margin-bottom: 0;
@@ -65,7 +72,6 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  padding: 1rem;
   font-size: .8rem;
   line-height: 1.4;
   white-space: pre;
@@ -83,6 +89,14 @@ pre code {
 
 /* Horizontal code overflow fix */
 .highlight {
+  padding: 1rem;
   white-space: pre;
   overflow-x: auto;
+  
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
+  @media (min-width: 38rem) {
+    width: 100%;
+    margin-left: 0;
+  }
 }

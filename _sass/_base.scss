@@ -34,9 +34,14 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: calc(100% + 2rem);   // full screen
+  margin-left: -1rem;
   height: auto;
-  border-radius: $img-border-radius;
+  @media (min-width: 38rem) {
+    max-width: 100%;
+    margin-left: 0;
+    border-radius: $img-border-radius;
+  }
 }
 
 table {
