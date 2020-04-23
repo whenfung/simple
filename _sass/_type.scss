@@ -59,7 +59,7 @@ code {
   padding: .25em .5em;
   font-size: .8rem;
   background-color: $code-bg;
-  border-radius: 3px;
+  border-radius: $code-border-radius;
 }
 pre {
   display: block;

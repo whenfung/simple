@@ -1,8 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
   margin: 0;
-  font-family: $body-font-family;
-  font-size: $body-font-size-PC;
-  line-height: $body-line-height;
+  padding: 0;
+}
+
+html {
+  font-family: $html-font-family;
+  font-size: $html-font-size-small;
+  line-height: $html-line-height;
+  @media (min-width: 38rem) {
+    font-size: $html-font-size-big;
+  }
+}
+
+body {
   color: $body-color;
   background-color: $body-bg;
 }
