@@ -133,8 +133,11 @@ video {
 // B 站视频嵌入, 保证 4:3 比例
 .videoWrapper {
   position: relative;
-  padding-bottom: 75%;
+  padding-bottom: 56.25%;
   height: 0;
+  @media (min-width: $width) {
+    padding-bottom: 75%;
+  }
 }
 
 .videoWrapper iframe {
