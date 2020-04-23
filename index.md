@@ -106,4 +106,12 @@ $$
 
 当然你也可以插入 B 站、YouTube 的视频，例如插入 B 站的视频如下：
 
-<iframe class="iframe" src="//player.bilibili.com/player.html?aid=540101314&bvid=BV1ki4y1b7ge&cid=170792825&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<div class = "videoWrapper">
+<iframe src="//player.bilibili.com/player.html?aid=540101314&bvid=BV1ki4y1b7ge&cid=170792825&page=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+B 站插入的代码略微复杂，如果要保证 `4:3` 的屏幕比例，需要标准的格式，也就是这里实现的 `.videoWrapper` 类和 `iframe` 标签的 `CSS` 相关设置。在 B 站的 URL 中，有几个参数需要注意以下：
+
+1. `page=1` 表示选集中的第 1 个视频。
+2. `high_quality=1` 表示最高画质。
+3. `danmaku=0` 表示关闭弹幕。 
