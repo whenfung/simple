@@ -102,9 +102,8 @@ $$
 插入 `<video>` 后的效果如下：
 
 <video src="https://cdn-video.xinpianchang.com/5b7fc02a84108.mp4" width = "100%" controls="" preload=""></video>
-
 ---
 
 当然你也可以插入 B 站、YouTube 的视频，例如插入 B 站的视频如下：
 
-<iframe src="//player.bilibili.com/player.html?aid=540101314&bvid=BV1ki4y1b7ge&cid=170792825&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe class="iframe" src="//player.bilibili.com/player.html?aid=540101314&bvid=BV1ki4y1b7ge&cid=170792825&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
