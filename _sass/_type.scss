@@ -55,7 +55,7 @@ blockquote {
   margin-left: -0.5rem;       // 手机端向左突出
   width: calc(100% + 1rem);
   
-  @media (min-width: 38rem) {
+  @media (min-width: $width) {
     margin-left: 0;
     width: 100%;
   }
@@ -107,7 +107,7 @@ pre.highlight {
   width: calc(100% + 2rem);  // 占满手机端横向宽度
   margin-left: -1rem;
   
-  @media (min-width: 38rem) {
+  @media (min-width: $width) {
     margin-left: 0;
     width: 100%;
   }
@@ -124,7 +124,7 @@ video {
   width: calc(100% + 2rem);
   margin-left: -1rem;
   
-  @media (min-width: 38rem) {
+  @media (min-width: $width) {
     margin-left: 0;
     width: 100%;
   }
@@ -136,7 +136,7 @@ iframe {
   height: 250px;
   margin-left: -1rem;
   
-  @media (min-width: 38rem) {
+  @media (min-width: $width) {
     width: 100%;
     height: 550px;
     margin-left: -0;

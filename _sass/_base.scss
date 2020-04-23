@@ -13,7 +13,7 @@ html {
   font-size: $html-font-size-small;
   line-height: $html-line-height;
   
-  @media (min-width: 38rem) {
+  @media (min-width: $width) {
     font-size: $html-font-size-big;
   }
 }
@@ -38,23 +38,41 @@ img {
   width: calc(100% + 2rem);     // 图片宽度和手机宽度同大
   margin-left: -1rem;           // 撑开父节点对 img 的约束
   height: auto;
-  @media (min-width: 38rem) {   // 大屏幕适配
+  @media (min-width: $width) {   // 大屏幕适配
     max-width: 100%;
     margin-left: 0;
     border-radius: $img-border-radius;
   }
 }
 
+// 表格 
 table {
   width: 100%;
-  border-collapse: collapse;  // 合并格子之间的线
+  border-collapse: collapse;      // 合并格子之间的线
+  border-top: 1px solid black;    // 上划线
+  border-bottom: 1px solid black; // 下划线
+  
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
+  
+  @media (min-width: $width) {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
-table, th, td {
+// 表格头和表格项
+th, td {    
   border: 1px solid black;
+  border-left: none;
+  padding: .25rem .5rem;
+  text-align: center;
 }
 
-th, td {
-  padding: .25rem .5rem;
-  text-align: left;
+tr th:last-child {  
+  border-right: none;
+}
+
+tr td:last-child {   
+  border-right: none;  
 }
