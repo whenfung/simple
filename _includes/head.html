@@ -1,12 +1,20 @@
 <head>
+  <!-- 网页标题 -->
   <title>{{ page.title }}</title>
   
+  <!-- 网页编码 -->
   <meta charset="utf-8" />
+  
+  <!-- 网页窗口适配 -->
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+  <!-- 网站图标 -->
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" />
+  
+  <!-- 网站样式 -->
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css" />
 
+  <!-- 数学公式渲染 -->
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
     MathJax.Hub.Config({
@@ -14,5 +22,5 @@
         inlineMath: [['$', '$'], ['\\(', '\\)']]
       }
     });
-  </script>  
+  </script>
 </head>

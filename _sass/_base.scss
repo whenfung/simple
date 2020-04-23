@@ -12,6 +12,7 @@ html {
   font-family: $html-font-family;
   font-size: $html-font-size-small;
   line-height: $html-line-height;
+  
   @media (min-width: 38rem) {
     font-size: $html-font-size-big;
   }
@@ -34,10 +35,10 @@ a {
 }
 
 img {
-  width: calc(100% + 2rem);   // full screen
-  margin-left: -1rem;
+  width: calc(100% + 2rem);     // 图片宽度和手机宽度同大
+  margin-left: -1rem;           // 撑开父节点对 img 的约束
   height: auto;
-  @media (min-width: 38rem) {
+  @media (min-width: 38rem) {   // 大屏幕适配
     max-width: 100%;
     margin-left: 0;
     border-radius: $img-border-radius;
@@ -46,7 +47,7 @@ img {
 
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: collapse;  // 合并格子之间的线
 }
 
 table, th, td {

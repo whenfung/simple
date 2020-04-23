@@ -39,14 +39,22 @@ ul, ol, dl {
   padding-left: 1rem;
 }
 
+hr {
+  position: relative;
+  margin: 3rem 0;
+  border: 0;
+  border-top: 1px solid black;
+}
+
 blockquote {
   margin: .8rem 0;
   padding: .5rem 1rem;
   color: $blockquote-color;
   border-left: .25rem solid $blockquote-border-left;
 
-  margin-left: -0.5rem;
+  margin-left: -0.5rem;       // 手机端向左突出
   width: calc(100% + 1rem);
+  
   @media (min-width: 38rem) {
     margin-left: 0;
     width: 100%;
@@ -63,16 +71,19 @@ pre {
 }
 
 code {
-  padding: .25em .5em;
-  font-size: .8rem;
+  padding: .25rem .5rem;
+  font-size: $code-font-size;
+  color: $code-color;
   background-color: $code-bg;
   border-radius: $code-border-radius;
 }
+
 pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: .8rem;
+  padding: 1rem;
+  font-size: $code-font-size;
   line-height: 1.4;
   white-space: pre;
   white-space: pre-wrap;
@@ -80,6 +91,7 @@ pre {
   word-wrap: break-word;
   background-color: #f5f5f5;
 }
+
 pre code {
   padding: 0;
   font-size: 100%;
@@ -87,16 +99,46 @@ pre code {
   background-color: transparent;
 }
 
-/* Horizontal code overflow fix */
-.highlight {
-  padding: 1rem;
+
+pre.highlight {
   white-space: pre;
   overflow-x: auto;
   
+  width: calc(100% + 2rem);  // 占满手机端横向宽度
+  margin-left: -1rem;
+  
+  @media (min-width: 38rem) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+// 数学公式水平滚动
+.MJXc-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+// 多媒体支持
+video {
   width: calc(100% + 2rem);
   margin-left: -1rem;
+  
+  @media (min-width: 38rem) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+// B 站视频嵌入
+iframe {
+  width: calc(100% + 2rem);
+  height: 250px;
+  margin-left: -1rem;
+  
   @media (min-width: 38rem) {
     width: 100%;
-    margin-left: 0;
+    height: 550px;
+    margin-left: -0;
   }
 }

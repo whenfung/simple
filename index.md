@@ -1,60 +1,72 @@
 ---
 layout: default
 title: Typography
+date: 2020-04-23
 ---
 
-# Markdown Support
+这是一个纯粹用来写文章的主题，当然你也可以将该主题的文章样式移植到不同的主题中。这篇文章会介绍这个主题的样式和搭建思路。
 
-As always, Jekyll offers support for GitHub Flavored Markdown, which allows you to format your posts using the [Markdown syntax](https://guides.github.com/features/mastering-markdown/). Examples of these text formatting features can be seen below. You can find this post in the `_posts` directory.
+## 1. 写作方式
 
-## Basic Formatting
+主题提供了完全兼容 GitHub 的 markdown 语法，因此你可以通过 [Markdown syntax](https://guides.github.com/features/mastering-markdown/) 进行文章的格式化。
 
-With Markdown, it is possible to emphasize words by making them *italicized*, using *astericks* or _underscores_, or making them **bold**, using **double astericks** or __double underscores__. Of course, you can combine those two formats, with both _**bold and italicized**_ text, using any combination of the above syntax. You can also add a strikethrough to text using a ~~double tilde~~.
+当然除了 GitHub 语法之外，主题利用了 [MathJax](https://www.mathjax.org/) 库实现了对数学公式编辑的支持，你可以通过 `LaTex` 语法编辑数学公式。
 
-## Paragraphs
+## 2. 基本格式
 
-This is what a paragraph looks like. For the purpose of demonstration, the rest of this paragraph and the next paragraph after will mean absolutely nothing. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+在同个段落中，可以会出现不同的字体，包括但不限于：
 
-Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+1. 如果你要使用 `Italics` 斜体，可以在需要格式化的文字两边加上 `*`，例如
 
+   ```markdown
+   *The format of this sentence is italics*
+   ```
 
-## Headings
+2. 如果你要使用 `bold` 粗体，可以在需要格式化的文字两边加上 `**`，例如
 
-Sometimes it is useful to have different levels of headings to structure your documents. Start lines with `#` to create headings. Multiple `##` in a row denote smaller heading size. The following demonstrate the full range of heading sizes:
+   ```markdown
+   **The format of the sentence is bold**
+   ```
 
-# Heading One (h1)
+3. 如果你要给一段文字加上删除线，可以在需要格式化的文字两边加上 `--`，例如
 
-## Heading Two (h2)
+   ```markdown
+   --The format of this sentence is the deleted form--
+   ```
 
-### Heading Three (h3)
+当你需要换一个段落的时候，只需要按一下回车键即可。
 
-#### Heading Four (h4)
+---
 
-##### Heading Five (h5)
+也许有时候你需要引用一下名人的话，这需要需要用到引用格式，通过在引用的话前面加 `>` 即可实现。例如
 
-###### Heading Six (h6)
-
-## Links
-
-You can create an inline link by wrapping link text in square brackets `[ ]`, and then wrapping the URL in parentheses `( )`. For example, it is very easy to [link to Google!](http://google.com).
-
-## Blockquotes
-
-Blockquotes are useful for denoting quotes, or highlighting a large block of text. Single line blockquote:
-
-> This quote will change your life.
-
-Multi line blockquote with a cite reference:
-
-> People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.
-
-## Code and Syntax Highlighting
-
-Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers - like GitHub or most Jekyll themes - support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. You can find the full list of supported programming languages [here](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers). Also, it is possible to do `inline code blocks`, by wrapping the text in ` ` ` quotations.
-
+```markdown
+> 没有人比我更懂政治。-- 特朗普
 ```
-No language indicated, so no syntax highlighting.
-```
+
+效果如下
+
+> 没有人比我更懂政治。-- 特朗普
+
+---
+
+也许文字不能更好地表达你的思想，可能需要图片来辅助，你可以通过 `![file-name](file-url)` 在你的文章中插入图片，效果如下
+
+![example]({{site.baseurl}}/img/example.jpg)
+
+---
+
+当然有些数据比较复杂，你可能需要用到表格来列举，使用效果如下：
+
+|      | 数学 | 语文 |
+| ---- | ---- | ---- |
+| 张三 | 80   | 50   |
+| 李四 | 70   | 90   |
+| 我   | 100  | 100  |
+
+---
+
+如果你是一个程序员，经常会需要核心代码来说明你的思路，所以为了方便程序员，我同样提供了高亮的代码格式，当公式行太长的时候，会自动水平滚动。例如 `ruby` 代码段格式如下，当然还包括很多其他编程语言的高亮，详细信息点击 [here](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)。
 
 ```ruby
 def print_hi(name)
@@ -64,81 +76,35 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
 
-## Images
+---
 
-To add an image, use `![alt text](<Image url>)`:
-
-![alt text]({{ site.baseurl }}/img/example.jpg)
-
-## Unordered and Numbered Lists
-
-You can make an unordered and nested list by preceding one or more lines of text with `-`, `*`, or `+`, and indenting sublists. The following lists show the full range of possible list formats.
-
-* List item one
-    * List item one
-        * List item one
-        * List item two
-        * List item three
-        * List item four
-    * List item two
-    * List item three
-    * List item four
-* List item two
-* List item three
-* List item four
-
-Numbered lists are made by using numbers instead of bullet points.
-
-1. List item one
-    1. List item one
-        1. List item one
-        2. List item two
-        3. List item three
-        4. List item four
-    2. List item two
-    3. List item three
-    4. List item four
-2. List item two
-3. List item three
-4. List item four
-
-## MathJax Example
-
-The [Schr枚dinger equation](https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation) is a partial differential equation that describes how the quantum state of a quantum system changes with time:
+搞工程学的人经常需要公式来梳理自己的逻辑，所以本主题提供了数学支持，当数学行很长的时候，主题会实现自动滚动。样例如下：
 
 $$
 i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ \frac{-\hbar^2}{2\mu}\nabla^2 + V(\mathbf{r},t)\right ] \Psi(\mathbf{r},t)
 $$
 
-[Joseph-Louis Millennial](https://en.wikipedia.org/wiki/Joseph-Louis_Millennial) was an Italian mathematician and astronomer who was responsible for the formulation of Lagrangian mechanics, which is a reformulation of Newtonian mechanics.
 
-$$ \frac{\mathrm{d}}{\mathrm{d}t} \left ( \frac {\partial  L}{\partial \dot{q}_j} \right ) =  \frac {\partial L}{\partial q_j} $$
+## 3. 主题设置
 
-## Tables
+通过修改 `_sass/_variables.scss` 文件，可以实现该主题的高度定制化，包括但不限于
 
-Title 1               | Title 2               | Title 3               | Title 4
---------------------- | :-------------------: | :-------------------- | --------------------:
-lorem                 | lorem ipsum           | lorem ipsum dolor     | lorem ipsum dolor sit
-lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit
-lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit
-lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit
+1. 可通过 `$html-font-family` 修改字体。
+2. 通过 `$body-bg` 修改网页背景的颜色。
+3. 通过 `$heading-color` 修改标题的颜色。
+4. 通过 `$blockquote-border-left` 修改引用块左侧边框颜色。
+5. 通过 `$link-color` 修改链接的颜色。 
 
-## Inline HTML elements
+## 4. HTML 支持
 
-HTML defines a long list of available inline tags, which you can mix with Markdown if you like. A complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+本主题不但支持 `markdown` 语法和 `LaTex` 语法，还支持 `HTML` 语法。你可以在主题中随意地添加 HTML 语法，包括但不限于视频、音乐等多媒体 `HTML` 插入。
 
-## Horizontal Rule
+插入 `<video>` 后的效果如下：
 
-Can be created by having three or more hyphens `---`, asterisks `***`, or underscores `___`:
+<video src="https://cdn-video.xinpianchang.com/5b7fc02a84108.mp4" width = "100%" controls="" preload=""></video>
 
 ---
 
-## Useful Resources
+当然你也可以插入 B 站、YouTube 的视频，例如插入 B 站的视频如下：
 
-More information on Markdown can be found at the following links:
-
-- [Markdown Here Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet#code)
-- [Quick Markdown Example](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html)
-- [Markdown Basics](https://daringfireball.net/projects/markdown/basics)
-- [GitHub Flavoured Markdown Spec](https://github.github.com/gfm/)
-- [Basic writing and formatting syntax](https://help.github.com/articles/basic-writing-and-formatting-syntax/#lists)
+<iframe src="//player.bilibili.com/player.html?aid=540101314&bvid=BV1ki4y1b7ge&cid=170792825&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
