@@ -132,6 +132,7 @@ video {
 
 // B 站视频嵌入, 保证 4:3 比例
 .videoWrapper {
+  margin-bottom: 1rem;
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
