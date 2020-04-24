@@ -2,7 +2,8 @@
 //
 // Styles for managing the structural hierarchy of the site.
 
-.container {               // 网页内容的容器
+// 网站整体布局
+.container {              
   max-width: $width;
   margin-left: auto;
   margin-right: auto;
@@ -10,7 +11,8 @@
   padding-right: 1rem;
 }
 
-.post {                  // 文章内容的容器
+// 文章内容布局
+.post {                  
   margin-bottom: 4rem;
 }
 
@@ -22,4 +24,73 @@
   text-align: center;
   font-size: .75rem;
   color: #adb5bd;
+}
+
+// 页脚布局
+.footer {
+  color: #999;
+  text-align: center;
+  margin: 3rem;
+}
+
+.footer a {
+  color: #999;  
+  padding: .8rem;
+  text-decoration: none;
+  
+  &:hover {
+    color: #333;
+  }
+}
+
+.fa-envelope {
+  padding: 5px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+  
+  &:hover {
+    color: #f39c12;
+  }
+}
+
+.fa-github {
+  padding: 5px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+    
+  &:hover {
+    color: #343434;
+  }
+}
+
+.fa-weibo {
+  padding: 5px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+    
+  &:hover {
+    color: #E95B39;
+  }
+}
+
+.fa-zhihu {
+  padding: 5px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+    
+  &:hover {
+    color: #1A94E6;
+  }
 }
