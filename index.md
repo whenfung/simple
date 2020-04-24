@@ -52,7 +52,7 @@ date: 2020-04-23
 
 也许文字不能更好地表达你的思想，可能需要图片来辅助，你可以通过 `![file-name](file-url)` 在你的文章中插入图片，效果如下
 
-![example]({{site.baseurl}}/img/example.jpg)
+![example]({{ site.img }}/example.jpg)
 
 ---
 
@@ -106,11 +106,9 @@ $$
 
 当然你也可以插入 B 站、YouTube 的视频，例如插入 B 站的视频如下：
 
-<div class = "videoWrapper">
 <iframe src="//player.bilibili.com/player.html?aid=540101314&bvid=BV1ki4y1b7ge&cid=170792825&page=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-</div>
 
-B 站插入的代码略微复杂，如果要保证 `4:3` 的屏幕比例，需要标准的格式，也就是这里实现的 `.videoWrapper` 类和 `iframe` 标签的 `CSS` 相关设置。在 B 站的 URL 中，有几个参数需要注意以下：
+B 站插入的代码略微复杂，为了保证移动端和 PC 端的窗口比例一致，需要 JS 对 `iframe` 标签的宽高做一些设置。在 B 站的 URL 中，有几个参数需要注意以下：
 
 1. `page=1` 表示选集中的第 1 个视频。
 2. `high_quality=1` 表示最高画质。

@@ -1,2 +1,6 @@
-url: https://professordeng.com
-baseurl: /simple
+url: https://professordeng.com   # 地址
+baseurl: /simple                 # 根目录
+
+img: /simple/assets/img          # 图片库
+css: /simple/assets/css          # CSS 样式库
+js:  /simple/assets/js           # js 库
