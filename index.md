@@ -58,7 +58,7 @@ date: 2020-04-23
 
 也许文字不能更好地表达你的思想，可能需要图片来辅助，你可以通过 `![file-name](file-url)` 在你的文章中插入图片，效果如下
 
-![example]({{ site.img }}/example.jpg)
+![example]({{ site.cdn }}/example.jpg)
 
 ---
 

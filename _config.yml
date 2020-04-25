@@ -10,3 +10,4 @@ linkedin: professordeng
 img: /simple/assets/img          # 图片库
 css: /simple/assets/css          # CSS 样式库
 js:  /simple/assets/js           # js 库
+cdn: https://cdn.jsdelivr.net/gh/professordeng/simple/assets/img
