@@ -99,12 +99,12 @@ pre code {
   background-color: transparent;
 }
 
-
+// 代码水平滚动、手机端宽度占满
 pre.highlight {
   white-space: pre;
   overflow-x: auto;
   
-  width: calc(100% + 2rem);  // 占满手机端横向宽度
+  width: calc(100% + 2rem);  
   margin-left: -1rem;
   
   @media (min-width: $width) {
@@ -130,15 +130,17 @@ video {
   }
 }
 
-// B 站视频嵌入, 保证 4:3 比例
+// B 站视频嵌入, 保证 16:9 比例
 iframe {
   margin-bottom: 1rem;
   
-  width: calc(100% + 2rem);
+  width: 100vw;
+  height: 56.25vw;
   margin-left: -1rem;
   
   @media (min-width: $width) {
     width: 100%;
-      margin-left: 0;
+    height: 405px;
+    margin-left: 0;
   }
 }
