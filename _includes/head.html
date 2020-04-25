@@ -26,4 +26,17 @@
       }
     });
   </script>
+  
+  <!-- 背景图 -->
+  {% if page.wallpaper %}
+    <style type="text/css">
+      body {
+        background-image: url({{ site.img }}/{{ page.wallpaper }});
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position:center;
+      }
+    </style>
+  {% endif %}
 </head>
