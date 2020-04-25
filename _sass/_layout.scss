@@ -219,12 +219,28 @@
   right: 0;        // 和右边框距离
   position: fixed; // 回滚键固定
   z-index: 99;     // 在所有页面上方
- 
+  
   @media (min-width: $top-width) {
     right: calc(50% - 23rem);
+    bottom: 1rem;
   }
 }
 
 .top a {
+  display: block;
+  margin: 0;
+  padding: .5rem;
+  border-radius: 1rem;
   color: #999;
+  
+  padding: 5px;
+  -o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+  
+  &:hover {
+    background-color: #338FCC;
+  }
 }
