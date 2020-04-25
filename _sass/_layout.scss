@@ -11,9 +11,14 @@
   padding-right: 1rem;
 }
 
+// 页面布局
+.page {
+  margin-bottom: 3rem;
+}
+
 // 文章内容布局
 .post {                  
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .post-title {
@@ -45,7 +50,7 @@
   }
 }
 
-.fa-bars {
+.fa-archive {
   padding: 5px;
 	-o-transition:.5s;
   	-ms-transition:.5s;

@@ -1,8 +1,14 @@
 ---
-layout: post
-title: Typography
+layout: page
+title: Home
 date: 2020-04-23
 ---
+
+<ul>
+  {% for post in site.posts %}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
 
 这是一个纯粹用来写文章的主题，当然你也可以将该主题的文章样式移植到不同的主题中。这篇文章会介绍这个主题的样式和搭建思路。
 
