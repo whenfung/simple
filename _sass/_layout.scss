@@ -63,6 +63,19 @@
   }
 }
 
+.fa-arrow-up {
+  padding: 5px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+  
+  &:hover {
+    color: #343434;
+  }
+}
+
 .fa-arrow-left {
   padding: 5px;
 	-o-transition:.5s;
@@ -199,3 +212,19 @@
   }
 }
 
+.top{
+  margin: 0;
+  padding: 1rem;
+  bottom: 0;       // 和底部距离
+  right: 0;        // 和右边框距离
+  position: fixed; // 回滚键固定
+  z-index: 99;     // 在所有页面上方
+ 
+  @media (min-width: $top-width) {
+    right: calc(50% - 23rem);
+  }
+}
+
+.top a {
+  color: #999;
+}
