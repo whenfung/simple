@@ -101,7 +101,8 @@ $$
 
 插入 `<video>` 后的效果如下：
 
-<video src="https://cdn-video.xinpianchang.com/5b7fc02a84108.mp4" width = "100%" controls="" preload=""></video>
+<video src="https://cdn-video.xinpianchang.com/5b7fc02a84108.mp4" controls controlsList="nodownload"></video>
+
 ---
 
 当然你也可以插入 B 站、YouTube 的视频，例如插入 B 站的视频如下：
