@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Typography
 date: 2020-04-23
 ---
