@@ -102,15 +102,25 @@ $$
 插入 `<video>` 后的效果如下：
 
 <video src="https://cdn-video.xinpianchang.com/5b7fc02a84108.mp4" controls controlsList="nodownload"></video>
-
 ---
 
 当然你也可以插入 B 站、YouTube 的视频，例如插入 B 站的视频如下：
 
-<iframe src="//player.bilibili.com/player.html?aid=540101314&bvid=BV1ki4y1b7ge&cid=170792825&page=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?bvid=BV1ki4y1b7ge&page=1&high_quality=1&danmaku=0" allowfullscreen> </iframe>
 
 B 站插入的代码略微复杂，为了保证移动端和 PC 端的窗口比例一致，需要 JS 对 `iframe` 标签的宽高做一些设置。在 B 站的 URL 中，有几个参数需要注意以下：
 
-1. `page=1` 表示选集中的第 1 个视频。
-2. `high_quality=1` 表示最高画质。
-3. `danmaku=0` 表示关闭弹幕。 
+1. `bvid` 是 B 站每个视频的标识符。
+2. `page=1` 表示选集中的第 1 个视频。
+3. `high_quality=1` 表示最高画质。
+4. `danmaku=0` 表示关闭弹幕。 
+5. `allowfullscreen` 表示允许全屏。
+
+---
+
+作为知识库，我特别喜欢 [TED](https://www.ted.com/) 网站的视频分享，可以在国内访问，也可以自定义嵌入，视频的内容也很有深度。例如如下：
+
+<iframe src="https://embed.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are" allowfullscreen>
+</iframe>
+
+`allowfullscreen` 表示允许全屏。
