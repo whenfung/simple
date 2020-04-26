@@ -20,6 +20,20 @@
   margin-bottom: 3rem;
 }
 
+.page-title {
+  text-align: center;
+}
+
+.archive-date {
+  float: left;
+  width: 4rem;
+  
+  @media (min-width: $width) {
+    float: right;
+    width: auto;
+  }
+}
+
 // 文章内容布局
 .post {                  
   margin-bottom: 3rem;
@@ -234,6 +248,7 @@
   display: block;
   margin: 0;
   padding: .5rem;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 1rem;
   color: #999;
   
