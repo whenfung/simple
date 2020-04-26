@@ -4,12 +4,12 @@ title: Home
 wallpaper: wallpaper.jpeg
 ---
 
-这是个针对移动端开发的 Jekyll 主题，纯 CSS 优化，不涉及 JS，支持个人搞定定制化，可以自定义颜色、字号、背景图。
+这是个针对移动端开发的 Jekyll 主题，纯 CSS 样式设计，不涉及 JS，支持个人高度定制化，包括但不限于自定义颜色、字号、背景图。主要功能包括如下
 
 1. Markdown 语法
 2. LaTex 数学公式
 3. 自定义背景图
-4. iframe 视频
+4. 各大 iframe 视频嵌入
 
 
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y' " %}
