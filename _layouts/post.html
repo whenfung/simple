@@ -8,4 +8,13 @@ layout: default
   
   {{ content }}
   
+  <div class="prev-next">
+    {% if page.previous %}
+      <a href="{{ site.baseurl }}{{ page.previous.url }}"><i class="fa fa-arrow-left" aria-hidden="true"></i>上一篇</a>
+    {% endif %}
+    
+    {% if page.next %}
+      <a href="{{ site.baseurl }}{{ page.next.url }}">下一篇<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    {% endif %}
+  </div>
 </div>

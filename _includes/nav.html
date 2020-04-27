@@ -1,16 +1,8 @@
 <nav class="nav">
   {% if page.layout == "post" %}
-    <a href="{{ site.baseurl }}/"><i class="fa fa-archive" aria-hidden="true"></i></a>
-   
-    {% if page.previous %}
-      <a href="{{ site.baseurl }}{{ page.previous.url }}"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-    {% endif %}
-    
-    {% if page.next %}
-      <a href="{{ site.baseurl }}{{ page.next.url }}"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-    {% endif %}
+    <a href="{{ site.baseurl }}/"><i class="fa fa-archive" aria-hidden="true"></i>归档</a>
   {% endif %}
 
-  <a href="https://github.com/{{ site.github }}{{ site.baseurl }}/issues/new"><i class="fa fa-comment" aria-hidden="true"></i></a>
-  <a href="https://baidu.com"><i class="fa fa-search" aria-hidden="true"></i></a>
+  <a href="https://github.com/{{ site.github }}{{ site.baseurl }}/issues/new"><i class="fa fa-comment" aria-hidden="true"></i>留言</a>
+  <a href="https://baidu.com"><i class="fa fa-search" aria-hidden="true"></i>搜索</a>
 </nav>

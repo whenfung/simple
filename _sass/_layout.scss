@@ -263,3 +263,25 @@
     background-color: #338FCC;
   }
 }
+
+// 上下篇布局
+.prev-next {
+  margin-top: 2rem;
+  text-align: center;
+  
+}
+
+.prev-next a {
+  color: #999;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: .5rem;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 1rem;
+  border: 2px solid #C9CECF;
+  
+  &:hover {
+    color: #333;
+  }
+}
