@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 视频
-wallpaper: wallpaper.jpeg
+title: 天空之城
+wallpaper: castle.jpg
 ---
 
-<iframe src="//player.bilibili.com/player.html?bvid=BV1A4411N7Kb&page=1&high_quality=1&danmaku=0" allowfullscreen> </iframe>
+<iframe src="//player.bilibili.com/player.html?bvid=BV1ps411U7xc&page=1&high_quality=1&danmaku=0" allowfullscreen></iframe>
 
 在 B 站视频的 URL 中，有几个参数的含义如下
 
