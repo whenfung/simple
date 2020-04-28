@@ -13,3 +13,4 @@ title: 资源
 8. [BiliBili](https://www.bilibili.com/) : iframe 视频支持
 9. [TED](https://www.ted.com/) : iframe 视频支持
 10. 最后感谢 [poole](https://github.com/poole/poole) 主题和 [Lagrange](https://github.com/LeNPaul/Lagrange) 主题的支持。
+11. 感谢 [dujun](https://www.dujin.org/3618.html) 的必应壁纸接口。
