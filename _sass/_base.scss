@@ -10,6 +10,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position:center;
+  
+  @media (max-width: $width) {  // 兼容垃圾 QQ 浏览器的移动端
+    background-size: auto 100%;
+  }
 }
 
 html {
