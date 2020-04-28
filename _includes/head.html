@@ -28,15 +28,20 @@
   </script>
   
   <!-- 背景图 -->
-  {% if page.wallpaper %}
-    <style type="text/css">
+  <style type="text/css">
+    {% if page.wallpaper %}
       body {
-        background-image: url({{ site.cdn }}/{{ page.wallpaper }});
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position:center;
+        background-image: url({{ site.cdn }} / {{ page.wallpaper }});
       }
-    </style>
-  {% endif %}
+    {% else %}
+      body {
+        background-image: url(https://api.dujin.org/bing/m.php);
+      }
+      @media (min-width: 720px) {
+        body {
+          background-image: url(https://api.dujin.org/bing/1920.php);
+        }
+      }
+    {% endif %}
+  </style>
 </head>
