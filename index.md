@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Home
-wallpaper: home.jpg
+wallpaper: home.jpeg
 ---
 
 这是个针对移动端开发的 Jekyll 主题，纯 CSS 样式设计，不涉及 JS，支持个人高度定制化，包括但不限于自定义颜色、字号、背景图。主要功能包括如下
