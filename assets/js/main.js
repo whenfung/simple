@@ -4,7 +4,5 @@ window.onscroll = function(){
   var top = document.getElementsByClassName("top");
   if( t >= 300 ) { 
     top[0].style.display = "block";
-  } else {
-    top[0].style.display = "none";
-  }
+  } 
 }
