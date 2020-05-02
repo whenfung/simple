@@ -11,7 +11,7 @@
   padding-right: 1rem;
   
   // 设置背景透明度, 为了放背景图
-  background-color:rgba(255, 255, 255, 0.8);
+  background-color: $container-bg-color;
   border-radius: .5rem;
 }
 
@@ -249,9 +249,10 @@
   display: block;
   margin: 0;
   padding: .5rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
   border-radius: 1rem;
-  color: #999;
+  border: 1px solid #338FCC;;
+  color: #333;
   
   padding: 5px;
   -o-transition:.5s;
