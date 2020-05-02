@@ -18,7 +18,7 @@ title: Home
 <ul>
   {% for post in group.items %}
     <li>
-      <div class="archive-date">{{ post.date | date: "%b %d" }}</div>
+      <div class="archive-date">{{ post.date | date: "%m-%d" }}</div>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}

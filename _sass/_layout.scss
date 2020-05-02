@@ -25,13 +25,7 @@
 }
 
 .archive-date {
-  float: left;
-  width: 4rem;
-  
-  @media (min-width: $width) {
-    float: right;
-    width: auto;
-  }
+  float: right;
 }
 
 // 文章内容布局
