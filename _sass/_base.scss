@@ -51,7 +51,7 @@ img {
 
 // 表格 
 table {
-  display: block;
+  display: inline-block;
   width: calc(100% + 2rem);
   margin-left: -1rem;
   
@@ -72,12 +72,6 @@ th, td {
   text-align: center;
 }
 
-tr {
-  &:nth-child(2n) {
-    background-color: #f6f8fa;
-  }
-  
-  &:hover {
-    background-color: #dfe2e5;
-  }
+tr:hover {
+  background-color: #dfe2e5;
 }
