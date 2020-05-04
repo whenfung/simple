@@ -10,7 +10,9 @@ linkedin: professordeng
 img: /simple/assets/img          # 图片库
 css: /simple/assets/css          # CSS 样式库
 js:  /simple/assets/js           # js 库
-cdn: https://cdn.jsdelivr.net/gh/professordeng/simple@gh-pages/assets/img
+cdn: https://cdn.jsdelivr.net/gh/professordeng/simple@gh-pages/assets/img # CDN 加速
+
+bg: true    # 是否开壁纸
 
 plugins:
   - jekyll-feed
