@@ -76,45 +76,6 @@
   }
 }
 
-.fa-arrow-up {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-  
-  &:hover {
-    color: #343434;
-  }
-}
-
-.fa-arrow-left {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-  
-  &:hover {
-    color: #343434;
-  }
-}
-
-.fa-arrow-right {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-  
-  &:hover {
-    color: #343434;
-  }
-}
-
 .fa-search {
   padding: 5px;
 	-o-transition:.5s;
@@ -226,6 +187,8 @@
   }
 }
 
+// 回到顶部按钮设计
+
 .top a {
   display: block;
   margin: 0;
@@ -247,24 +210,64 @@
   }
 }
 
+.fa-arrow-up {
+  padding: 5px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+  
+  &:hover {
+    color: #343434;
+  }
+}
+
+
 // 上下篇布局
 .prev-next {
-  margin-top: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
+  display: flex;
+  width: calc(100% + 2rem);
+  margin-bottom: 1rem;
+  margin-left: -1rem;
+  justify-content: space-between;
+  background-color: #EBF1F1;
 }
 
 .prev-next a {
   color: #999;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding: .5rem;
+  padding: .25rem .5rem;
   text-decoration: none;
-  border-radius: 1rem;
-  border: 2px solid #C9CECF;
+  border-radius: .25rem;
   
   &:hover {
     color: #333;
     background-color: #C0FAD7;
+  }
+}
+
+.fa-angle-left {
+  padding: 5px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+  
+  &:hover {
+    color: #343434;
+  }
+}
+
+.fa-angle-right {
+  padding: 5px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+  
+  &:hover {
+    color: #343434;
   }
 }
