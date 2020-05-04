@@ -5,7 +5,7 @@ title: 资源
 
 这里列举创建主题用到的资源。
 
-1. [favicon](https://facivon.io) : 网站图标生成
+1. [favicon](https://favicon.io) : 网站图标生成
 2. [jekyll](https://jekyllrb.com/) : 静态网站生成引擎
 3. [liquid](https://liquid.bootcss.com/) : 安全、面向客户的模板语言，用于构建灵活的 web 应用
 4. [sass](https://www.sass.hk/) : 世界上最成熟、最稳定、最强大的专业级 CSS 扩展语言
