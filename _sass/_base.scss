@@ -51,13 +51,13 @@ img {
 
 // 表格 
 table {
-  width: 100%;
-  border-collapse: collapse;      // 合并格子之间的线
-  border-top: 1px solid black;    // 上划线
-  border-bottom: 1px solid black; // 下划线
-  
+  display: block;
   width: calc(100% + 2rem);
   margin-left: -1rem;
+  
+  overflow: auto;
+  
+  border-collapse: collapse;      // 合并格子之间的线
   
   @media (min-width: $width) {
     width: 100%;
@@ -67,16 +67,17 @@ table {
 
 // 表格头和表格项
 th, td {    
-  border: 1px solid black;
-  border-left: none;
+  border: 1px solid #dfe2e5;
   padding: .25rem .5rem;
   text-align: center;
 }
 
-tr th:last-child {  
-  border-right: none;
-}
-
-tr td:last-child {   
-  border-right: none;  
+tr {
+  &:nth-child(2n) {
+    background-color: #f6f8fa;
+  }
+  
+  &:hover {
+    background-color: #dfe2e5;
+  }
 }
