@@ -19,8 +19,8 @@ plugins:
   
 gitalk:
   enable: true
-  ClientID: 6e42adfac0bf61e180f6
-  ClientSecret: d1ed44fc8888bbb2bcafb6bbc819ac9dddca5b71
+  clientID: 6e42adfac0bf61e180f6
+  clientSecret: d1ed44fc8888bbb2bcafb6bbc819ac9dddca5b71
   repo: simple
   owner: professordeng
   admin: professordeng
