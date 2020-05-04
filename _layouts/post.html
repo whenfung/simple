@@ -17,4 +17,8 @@ layout: default
       <a href="{{ site.baseurl }}{{ page.next.url }}">下一篇<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
     {% endif %}
   </div>
+  
+  {% if site.gitalk.enable %}
+    {% include comment.html %}
+  {% endif %}
 </div>
