@@ -13,13 +13,15 @@ layout: default
 <div class="prev-next">
   <div>
   {% if page.previous %}
-    <a href="{{ site.baseurl }}{{ page.previous.url }}"><i class="fa fa-angle-left" aria-hidden="true"></i>上一篇</a>
+    <a href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ page.previous.title }}">
+      <i class="fa fa-angle-left" aria-hidden="true"></i>上一篇</a>
   {% endif %}
   </div>
   
   <div>
   {% if page.next %}
-    <a href="{{ site.baseurl }}{{ page.next.url }}">下一篇<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    <a href="{{ site.baseurl }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇
+      <i class="fa fa-angle-right" aria-hidden="true"></i></a>
   {% endif %}
   </div>
 </div>
