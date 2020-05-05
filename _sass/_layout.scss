@@ -160,6 +160,8 @@
   }
 }
 
+// 回到顶部按钮设计
+
 .top{
   display: none;   // 滚动时显示
   margin: 0;
@@ -175,13 +177,11 @@
   }
 }
 
-// 回到顶部按钮设计
-
-.top a {
+.btn {
   display: block;
   margin: 0;
   padding: .5rem;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 1rem;
   box-shadow:  0px 0px 5px 1px inset;
   color: #333;

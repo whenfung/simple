@@ -11,9 +11,10 @@ window.onscroll = function() {
 
 // 检测回到顶部按钮
 window.onload = function(){
-  var top = document.getElementsByClassName("top");
-  top[0].onclick = function() {
-      toScroll();
+  var btn = document.getElementsByClassName("btn");
+  btn[0].onclick = function() {
+    btn[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+    toScroll();
   }
 }
 
