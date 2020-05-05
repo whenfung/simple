@@ -162,34 +162,30 @@
 
 // 回到顶部按钮设计
 .top{
-  display: none;   // 滚动时显示
+  display: none;      // 滚动时显示
+  cursor: pointer;    // 选中时显示手指
   margin: 0;
   padding: .5rem;
-  bottom: 0;       // 和底部距离
-  right: 0;        // 和右边框距离
-  position: fixed; // 回滚键固定
-  z-index: 99;     // 在所有页面上方
+  bottom: 1rem;       // 和底部距离
+  right: 1rem;        // 和右边框距离
+  position: fixed;    // 回滚键固定
+  z-index: 99;        // 在所有页面上方
+  
+  -webkit-tap-highlight-color: rgba(0,0,0,0); // 不显示蓝色框
+  
+  border-radius: 1rem;
+  box-shadow:  0px 0px 5px 1px inset;
+  background-color: rgba(255, 255, 255, 0.8);
   
   @media (min-width: $top-width) {
     right: calc(50% - 23rem);
-    bottom: 1rem;
   }
-}
-
-.top a {
-  display: block;
-  margin: 0;
-  padding: .5rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 1rem;
-  box-shadow:  0px 0px 5px 1px inset;
-  color: #333;
 }
 
 .fa-arrow-up {
   padding: 5px;
+  color: #333;
 }
-
 
 // 上下篇布局
 .prev-next {
