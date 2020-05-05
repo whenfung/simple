@@ -9,14 +9,7 @@ window.onscroll = function() {
   }
 }
 
-// 检测回到顶部按钮
-window.onload = function(){
-  var top = document.getElementsByClassName("top");
-  top[0].onclick = function() {
-    toScroll();
-  }
-}
-
+// 回到顶部滚动函数
 function toScroll() {
   clearInterval(this.timer);
   this.timer = setInterval(function() {
