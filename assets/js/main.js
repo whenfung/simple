@@ -20,3 +20,12 @@ function toScroll() {
     };
   }, 10)  // 每 10 毫秒调用一次，这样绝对顺滑
 }
+
+function showWP() {
+  var c = document.getElementsByClassName("container");
+  if (c[0].style.display === "block") {
+    c[0].style.display = "none";
+  } else {
+    c[0].style.display = "block";
+  }
+}

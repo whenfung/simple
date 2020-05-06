@@ -16,4 +16,6 @@ title: 资源
 9. [TED](https://www.ted.com/) : iframe 视频支持
 10. 感谢 [poole](https://github.com/poole/poole) 主题和 [Lagrange](https://github.com/LeNPaul/Lagrange) 主题的支持
 11. 感谢 [gitalk](https://github.com/gitalk/gitalk) 评论系统的支持
+12. 壁纸网站支持 [win4000](http://www.win4000.com/)
+13. bing 壁纸接口支持 [缙哥哥](https://www.dujin.org/3618.html)
 

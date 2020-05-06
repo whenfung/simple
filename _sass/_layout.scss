@@ -189,6 +189,33 @@
   color: #333;
 }
 
+// 显示壁纸按钮
+
+.wallpaper-button {
+  display: none;
+  cursor: pointer;
+  margin: 0;
+  padding: .5rem;
+  right: 1rem;
+  top: 1rem;
+  position: fixed;
+  z-index: 99;
+  
+  border-radius: 1rem;
+  box-shadow:  0px 0px 5px 1px inset;
+  background-color: rgba(255, 255, 255, 0.8);
+  
+  @media (min-width: $top-width) {
+    display: block;
+  }
+}
+
+.fa-image {
+  padding: 5px;
+  color: #333;
+}
+
+
 // 上下篇布局
 .prev-next {
   display: flex;
