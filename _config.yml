@@ -1,24 +1,34 @@
+# URL
 url: https://professordeng.com   # 地址
 baseurl: /simple                 # 根目录
 
+# 社交帐号
+## 会在 footer 显示
 github: professordeng
 mail: professordeng@qq.com
 weibo: codeng
 zhihu: professordeng
 linkedin: professordeng
 
+# 站点资源
 img: /simple/assets/img          # 图片库
 css: /simple/assets/css          # CSS 样式库
 js:  /simple/assets/js           # js 库
 cdn: https://cdn.jsdelivr.net/gh/professordeng/simple@gh-pages/assets/img # CDN 加速
 
-bg: true    # 是否开壁纸
+# 背景图片
+## true 为全站启用 Bing 每日美图，如为 false 则不启用。
+## 你可以在文章(即 _post 目录下的 md 文件)的 front matter 部分通过 wallpaper:<图片_URL> 来单独设定文章的背景图
+bg: true    # 是否使用 Bing 每日美图
 
+# Jekyll 插件
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  
+
+# 评论系统（本主题使用 gialk）
+## Docs: https://github.com/gitalk/gitalk/blob/master/readme-cn.md#%E4%BD%BF%E7%94%A8
 gitalk:
   enable: true
   clientID: 6e42adfac0bf61e180f6
@@ -26,6 +36,7 @@ gitalk:
   repo: simple
   owner: professordeng
   admin: professordeng
-  
+
+# Google Analytics
+## Docs: https://analytics.google.com/analytics/web/
 google-analytics: UA-165708741-1
-  
