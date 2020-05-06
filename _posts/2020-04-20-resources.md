@@ -18,4 +18,6 @@ title: 资源
 11. 感谢 [gitalk](https://github.com/gitalk/gitalk) 评论系统的支持
 12. 壁纸网站支持 [win4000](http://www.win4000.com/)
 13. bing 壁纸接口支持 [缙哥哥](https://www.dujin.org/3618.html)
+14. [Google Analytics](https://analytics.google.com/) 提供网站访问数据
+15. [Google Search console](https://search.google.com/) 提供网站的收录
 
