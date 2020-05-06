@@ -2,7 +2,8 @@
   {% if page.layout == "post" %}
     <a href="{{ site.baseurl }}/"><i class="fa fa-archive" aria-hidden="true"></i>归档</a>
     <a href="https://github.com/professordeng/simple/edit/gh-pages/{{ page.path }}"><i class="fa fa-edit" aria-hidden="true"></i>编辑</a>
+  {% elsif page.title == "Home" %}
+    <a href="https://github.com/professordeng/simple/archive/gh-pages.zip"><i class="fa fa-download" aria-hidden="true"></i>下载模板</a>
+    <a href="https://github.com/professordeng/simple"><i class="fa fa-star" aria-hidden="true"></i> star 主题</a>
   {% endif %}
-
-  <a href="https://cn.bing.com/search?q=site:{{ site.url }}"><i class="fa fa-search" aria-hidden="true"></i>搜索</a>
 </nav>
