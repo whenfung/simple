@@ -19,10 +19,12 @@
 
   <!-- 流程图 -->
   <script src="https://cdn.jsdelivr.net/npm/mermaid@8.5.0/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true});</script>
   
   <!-- 图标样式库 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13/css/all.min.css" />
   
+  {% if page.layout == "post" %}
   <!-- 数学公式渲染 -->
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -32,6 +34,7 @@
       }
     });
   </script>
+  {% endif %}
   
   <!-- 背景图 -->
   <style type="text/css">
@@ -51,9 +54,11 @@
     {% endif %}
   </style>
   
+  {% if site.gitalk.enable %}
   <!-- 评论 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  {% endif %}
   
   {% feed_meta %}
   {% seo %}
