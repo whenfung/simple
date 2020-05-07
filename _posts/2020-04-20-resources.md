@@ -21,3 +21,5 @@ title: 资源
 14. [Google Analytics](https://analytics.google.com/) 是一个由 Google 所提供的网站流量统计服务。
 15. [Google Search console](https://search.google.com/) 是 Google 开发的一个面向网站管理员的免费工具。网站管理员可以通过该工具了解自己网站的收录情况并优化其网站的曝光率。
 16. 感谢 [mermaid](https://github.com/mermaid-js/mermaid) 提供的流程图渲染支持
+17. [setting up a github pages site with jekyll](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)
+18. [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/)
