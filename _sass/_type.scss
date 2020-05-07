@@ -147,3 +147,8 @@ iframe {
     margin-left: 0;
   }
 }
+
+// 渲染图适应
+.mermaid {
+  overflow-x: auto;
+}
