@@ -3,7 +3,7 @@ url: https://professordeng.com   # 域名
 baseurl: /simple                 # 根目录
 
 # 社交帐号
-## 会在 footer 显示
+## 会在页面底部显示
 github: professordeng
 mail: professordeng@qq.com
 weibo: codeng
