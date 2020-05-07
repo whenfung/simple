@@ -27,7 +27,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# 评论系统（本主题使用 gialk）
+# 评论系统（本主题使用 gitalk）
 ## Docs: https://github.com/gitalk/gitalk/blob/master/readme-cn.md#%E4%BD%BF%E7%94%A8
 gitalk:
   enable: true
