@@ -39,14 +39,13 @@
   <!-- 背景图 -->
   <style type="text/css">
     {% if page.wallpaper %}
-      body {
-        background-image: url({{ site.cdn }}/{{ page.wallpaper }});
+      @media (min-width: 960px) {
+        body {
+          background-image: url({{ site.cdn }}/{{ page.wallpaper }});
+        }
       }
     {% elsif site.bg %}
-      body {
-        background-image: url(https://api.dujin.org/bing/m.php);
-      }
-      @media (min-width: 720px) {
+      @media (min-width: 960px) {
         body {
           background-image: url(https://api.dujin.org/bing/1920.php);
         }

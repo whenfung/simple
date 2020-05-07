@@ -11,9 +11,11 @@
   padding-right: 1rem;
   
   // 设置背景透明度, 为了放背景图
-  background-color: $container-bg-color;
-  border-radius: .5rem;
-  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  @media (min-width: 960px) {
+    background-color: $container-bg-color;
+    border-radius: .5rem;
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
 }
 
 // 页面布局
