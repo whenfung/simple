@@ -36,6 +36,11 @@ gitalk:
   repo: simple
   owner: professordeng
   admin: professordeng
+  id: simple      # 默认是 location.pathname
+  title: simple   # issue 标题
+  labels: ['simple']
+  body: simple
+  
 
 # Google Analytics
 ## Docs: https://analytics.google.com/analytics/web/
