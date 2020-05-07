@@ -17,8 +17,8 @@ js:  /simple/assets/js           # js 库
 cdn: https://cdn.jsdelivr.net/gh/professordeng/simple@gh-pages/assets/img # CDN 加速
 
 # 背景图片
-## true 为全站启用 Bing 每日美图，如为 false 则不启用。
-## 你可以在文章（即 _post 目录下的 md 文件）的 front matter 部分通过 wallpaper:<图片_URL> 来单独设定文章的背景图
+## true 为全站启用 Bing 每日美图，若为 false 则不启用
+## 你可以在文章（即 _post 目录下的 md 文件）的 front matter 部分通过 wallpaper: ImageURL 来单独设定文章的背景图
 bg: true    # 是否使用 Bing 每日美图
 
 # Jekyll 插件
@@ -30,7 +30,7 @@ plugins:
 # 评论系统（本主题使用 gitalk）
 ## Docs: https://github.com/gitalk/gitalk/blob/master/readme-cn.md
 gitalk:
-  enable: true
+  enable: true 
   clientID: 6e42adfac0bf61e180f6
   clientSecret: d1ed44fc8888bbb2bcafb6bbc819ac9dddca5b71
   repo: simple
