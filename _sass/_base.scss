@@ -39,7 +39,7 @@ a {
 }
 
 img {
-  width: calc(100% + 2rem);     // 图片宽度和手机宽度同大
+  max-width: calc(100% + 2rem);     // 图片宽度和手机宽度同大
   margin-left: -1rem;           // 撑开父节点对 img 的约束
   height: auto;
   @media (min-width: $width) {   // 大屏幕适配
