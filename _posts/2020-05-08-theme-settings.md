@@ -1,7 +1,13 @@
 ---
 layout: post
-title: CSS 样式设置
+title: 快速设置
 ---
+
+## 网站信息设置
+
+fork 主题后，直接在 `_config.yml` 做相应的设置即可。
+
+## 网站样式设置
 
 通过修改 `_sass/_variables.scss` 文件，可以实现该主题的高度定制化，包括但不限于
 
