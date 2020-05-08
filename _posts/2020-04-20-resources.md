@@ -3,7 +3,7 @@ layout: post
 title: 资源
 ---
 
-这里列举创建主题用到的资源。
+这里列举创建主题时用到的部分资源。
 
 1. [favicon](https://favicon.io) : 网站图标生成
 2. [jekyll](https://jekyllrb.com/) : 静态网站生成引擎
