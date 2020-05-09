@@ -1,15 +1,6 @@
+// border-box 表示 width = border + padding + content-width
 * {
   box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position:center;
 }
 
 html {
@@ -25,6 +16,11 @@ html {
 body {
   color: $body-color;
   background-color: $body-bg;
+  
+  background-size: cover;         // 图片
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:center;
 }
 
 a {
@@ -40,7 +36,7 @@ a {
 
 img {
   max-width: calc(100% + 2rem);     // 图片宽度和手机宽度同大
-  margin-left: -1rem;           // 撑开父节点对 img 的约束
+  margin-left: -1rem;               // 撑开父节点对 img 的约束
   height: auto;
   @media (min-width: $width) {   // 大屏幕适配
     max-width: 100%;
