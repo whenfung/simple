@@ -33,3 +33,18 @@ function showWP() {
     i.className = "fa fa-image";
   }
 }
+
+// 对 body 内元素的一些设置
+function setting() {
+  var imgs = document.getElementsByTagName("img");  // 获取所有 img
+  var container = document.getElementsByClassName("container")[0];  // 获取内容宽度
+  var cwidth = container.offsetWidth; // 内容宽度
+  cwidth = cwidth > 720? cwidth - 40 : cwidth - 32;  // 去除 padding
+  
+  for(var i = 0; i < imgs.length; i ++) {  // 对每个 img 进行调整
+    var imgWidth = imgs[i].naturalWidth;
+    if(imgWidth < cwidth) {
+      imgs[i].style.marginLeft = (cwidth - imgWidth) / 2 + "px";
+    } 
+  }
+}
