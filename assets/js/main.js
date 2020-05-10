@@ -43,7 +43,9 @@ function setting() {
   for(var i = 0; i < imgs.length; i ++) {  // 对每个 img 进行调整
     var imgWidth = imgs[i].naturalWidth;
     if(imgWidth < cwidth) {
-      imgs[i].style.marginLeft = (cwidth - imgWidth) / 2 + "px";
-    } 
+      imgs[i].style.paddingLeft = (cwidth - imgWidth) / 2 + "px";
+    } else {
+      imgs[i].style.paddingLeft = 0;
+    }
   }
 }
