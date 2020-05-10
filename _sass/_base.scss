@@ -62,13 +62,13 @@ table {
   display: block;
   border-collapse: collapse;      // 合并格子之间的线
   
-  max-width: calc(100% + 2rem);
+  width: calc(100% + 2rem);
   margin-left: -1rem;
   
   overflow: auto;
   
   @media (min-width: $width) {
-    max-width: 100%;
+    width: 100%;
     margin-left: 0;
   }
 }
