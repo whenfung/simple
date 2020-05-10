@@ -1,8 +1,17 @@
-// border-box 表示 width = border + padding + content-width
+// border-box 表示 width 包括边框、内边距、内容
+
 * {
   box-sizing: border-box;
 }
 
+// 网页整体无内边距和外边距
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// 设置根元素的字体、字号、行高
 html {
   font-family: $html-font-family;
   font-size: $html-font-size-small;
@@ -13,6 +22,7 @@ html {
   }
 }
 
+// 设置整体的字色、背景色、背景图
 body {
   color: $body-color;
   background-color: $body-bg;
@@ -23,6 +33,7 @@ body {
   background-position:center;
 }
 
+// 设置链接的格式
 a {
   color: $link-color;
   text-decoration: none;
@@ -34,11 +45,12 @@ a {
   }
 }
 
+// 设置图片的格式
 img {
   max-width: calc(100% + 2rem);     // 图片宽度和手机宽度同大
   margin-left: -1rem;               // 撑开父节点对 img 的约束
   height: auto;
-  @media (min-width: $width) {   // 大屏幕适配
+  @media (min-width: $width) {      // 大屏幕适配
     max-width: 100%;
     margin-left: 0;
     border-radius: $img-border-radius;
@@ -47,16 +59,16 @@ img {
 
 // 表格 
 table {
-  display: inline-block;
-  width: calc(100% + 2rem);
+  display: block;
+  border-collapse: collapse;      // 合并格子之间的线
+  
+  max-width: calc(100% + 2rem);
   margin-left: -1rem;
   
   overflow: auto;
   
-  border-collapse: collapse;      // 合并格子之间的线
-  
   @media (min-width: $width) {
-    width: 100%;
+    max-width: 100%;
     margin-left: 0;
   }
 }
