@@ -1,6 +1,6 @@
-// Typography
+// 排版
 //
-// Headings, body text, lists, and other misc typographic elements.
+// 标题, 段落, 列表和一些文章可能出现的元素
 
 h1, h2, h3, h4, h5, h6 {
   color: $heading-color;
@@ -42,16 +42,16 @@ ul, ol, dl {
 
 hr {
   position: relative;
-  margin: 3rem 0;
+  margin: 3rem 3rem;
   border: 0;
-  border-top: 1px solid black;
+  border-top: 2px solid #A2A2A2;
 }
 
 blockquote {
-  margin: .8rem 0;
-  padding: .5rem 1rem;
-  color: $blockquote-color;
-  border-left: .25rem solid $blockquote-border-left;
+  margin: .8rem 0;            // 上下外边距
+  padding: .5rem 1rem;        // 上下、左右内边距
+  color: $blockquote-color;   // 字色
+  border-left: .25rem solid $blockquote-border-left;  // 左边框色
 
   margin-left: -0.5rem;       // 手机端向左突出
   width: calc(100% + 1rem);
@@ -68,32 +68,30 @@ blockquote {
 
 code,
 pre {
-  font-family: $code-font-family;
+  font-family: $code-font-family;   // 代码字体
+  font-size: $code-font-size;       // 代码字号
+  background-color: $code-bg;       // 代码背景色
 }
 
 code {
-  padding: .25rem .5rem;
-  font-size: $code-font-size;
-  color: $code-color;
-  background-color: $code-bg;
-  border-radius: $code-border-radius;
+  padding: .2rem .4rem;
+  color: $code-color;                  // 代码颜色
+  border-radius: $code-border-radius;  // 圆角边框
 }
 
+// 代码段格式设置
 pre {
   display: block;
+  line-height: 1.4;         // 代码行高
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1rem;
-  font-size: $code-font-size;
-  line-height: 1.4;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #f5f5f5;
+  white-space: pre;        // 保留空格，遇到源码换行或 <br/> 才换行
+  word-break: break-all;   // 允许在单词内换行
+  word-wrap: break-word;   // 允许长单词或 URL 地址换行到下一行
 }
 
-pre code {
+pre code {   // 去除 pre 中 code 的格式
   padding: 0;
   font-size: 100%;
   color: inherit;
@@ -102,7 +100,6 @@ pre code {
 
 // 代码水平滚动、手机端宽度占满
 pre.highlight {
-  white-space: pre;
   overflow-x: auto;
   
   width: calc(100% + 2rem);  
@@ -117,7 +114,6 @@ pre.highlight {
 // 数学公式水平滚动
 .MJXc-display {
   overflow-x: auto;
-  overflow-y: hidden;
 }
 
 // 多媒体支持
@@ -135,8 +131,8 @@ video {
 iframe {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  overflow: none;   // 去除滚动框
-  border: 0;        // 去除嵌入边框
+  overflow: none;      // 去除滚动框
+  border: 0;           // 去除嵌入边框
   
   width: 100vw;
   height: 56.25vw;
