@@ -34,10 +34,11 @@ function showWP() {
   }
 }
 
-// 对 body 内元素的一些设置
+// 对 post 内元素的自动化设置
 function setting() {
-  var imgs = document.getElementsByTagName("img");  // 获取所有 img
-  var cwidth = document.getElementsByClassName("post")[0].offsetWidth;  // 获取内容宽度
+  var post = document.getElementsByClassName("post")[0];  // 获取 post 布局
+  var imgs = post.getElementsByTagName("img");            // 获取 post 内所有 img
+  cwidth = post.offsetWidth;
   
   for(var i = 0; i < imgs.length; i ++) {  // 对每个 img 进行调整
     var imgWidth = imgs[i].naturalWidth;
