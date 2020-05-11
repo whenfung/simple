@@ -64,22 +64,6 @@
   }
 }
 
-.fa-home,
-.fa-edit,
-.fa-download,
-.fa-star {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-  
-  &:hover {
-    color: #343434;
-  }
-}
-
 // 页脚布局
 .footer {
   color: #999;
@@ -95,71 +79,6 @@
   
   &:hover {
     color: #333;
-  }
-}
-
-.fa-envelope {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-  
-  &:hover {
-    color: #f39c12;
-  }
-}
-
-.fa-github {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-    
-  &:hover {
-    color: #343434;
-  }
-}
-
-.fa-weibo {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-    
-  &:hover {
-    color: #E95B39;
-  }
-}
-
-.fa-zhihu {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-    
-  &:hover {
-    color: #1A94E6;
-  }
-}
-
-.fa-linkedin {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-    
-  &:hover {
-    color: #338FCC;
   }
 }
 
@@ -185,11 +104,6 @@
   }
 }
 
-.fa-arrow-up {
-  padding: 5px;
-  color: #333;
-}
-
 // 显示壁纸按钮
 .wallpaper-button {
   display: none;
@@ -210,12 +124,6 @@
   @media (min-width: $top-width) {
     display: block;
   }
-}
-
-.fa-file-alt,
-.fa-image {
-  padding: 5px;
-  color: #333;
 }
 
 // 新建文章按钮
@@ -240,8 +148,7 @@
   }
 }
 
-.fa-pencil-alt {
-  padding: 5px;
+.new a {
   color: #333;
 }
 
@@ -276,18 +183,4 @@
   border-top-left-radius: .5rem;
   border-bottom-left-radius: .5rem;
   background-color: rgba($color: #FFFFFF, $alpha: 0.8);
-}
-
-.fa-angle-left,
-.fa-angle-right {
-  padding: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-  
-  &:hover {
-    color: #343434;
-  }
 }
