@@ -5,10 +5,8 @@
 // 网站整体布局
 .container {
   max-width: $width;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin: 0 auto;    // 居中
+  padding: 0 1rem;   // 左右内边距设置
   
   // 设置背景透明度, 为了放背景图
   @media (min-width: 960px) {
@@ -28,7 +26,8 @@
 }
 
 .archive-date {
-  float: right;
+  float: left;
+  width: 4rem;
 }
 
 // 文章内容布局
