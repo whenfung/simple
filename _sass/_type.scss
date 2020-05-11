@@ -53,14 +53,8 @@ blockquote {
   color: $blockquote-color;   // 字色
   border-left: .25rem solid $blockquote-border-left;  // 左边框色
 
-  margin-left: -0.5rem;       // 手机端向左突出
-  width: calc(100% + 1rem);
+  width: 100%;
   
-  @media (min-width: $width) {
-    margin-left: 0;
-    width: 100%;
-  }
-
   p:last-child {
     margin-bottom: 0;
   }
@@ -82,13 +76,11 @@ code {
 // 代码段格式设置
 pre {
   display: block;
+  width: 100%;
   line-height: 1.4;         // 代码行高
   margin-top: 0;
   margin-bottom: 1rem;
-  padding: 1rem;
-  white-space: pre;        // 保留空格，遇到源码换行或 <br/> 才换行
-  word-break: break-all;   // 允许在单词内换行
-  word-wrap: break-word;   // 允许长单词或 URL 地址换行到下一行
+  padding: .8rem;
 }
 
 pre code {   // 去除 pre 中 code 的格式
@@ -98,17 +90,9 @@ pre code {   // 去除 pre 中 code 的格式
   background-color: transparent;
 }
 
-// 代码水平滚动、手机端宽度占满
+// 代码水平滚动
 pre.highlight {
   overflow-x: auto;
-  
-  width: calc(100% + 2rem);  
-  margin-left: -1rem;
-  
-  @media (min-width: $width) {
-    margin-left: 0;
-    width: 100%;
-  }
 }
 
 // 数学公式水平滚动

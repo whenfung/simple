@@ -47,14 +47,9 @@ a {
 
 // 设置图片的格式
 img {
-  max-width: calc(100% + 2rem);     // 图片宽度和手机宽度同大
-  margin-left: -1rem;               // 撑开父节点对 img 的约束
+  max-width: 100%;      // 最大宽度
   height: auto;
-  @media (min-width: $width) {      // 大屏幕适配
-    max-width: 100%;
-    margin-left: 0;
-    border-radius: $img-border-radius;
-  }
+  border-radius: $img-border-radius;
 }
 
 // 表格 
@@ -62,16 +57,10 @@ table {
   display: block;
   border-collapse: collapse;      // 合并格子之间的线
   
-  width: calc(100% + 2rem);
-  margin-left: -1rem;
+  width: 100%;
   margin-bottom: 1rem;
   
   overflow: auto;
-  
-  @media (min-width: $width) {
-    width: 100%;
-    margin-left: 0;
-  }
 }
 
 // 表格头和表格项

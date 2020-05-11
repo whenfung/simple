@@ -39,12 +39,14 @@ function setting() {
   var post = document.getElementsByClassName("post")[0];  // 获取 post 布局
   
   // 图片居中
-  var imgs = post.getElementsByTagName("img");            // 获取 post 内所有 img
+  var imgs = post.getElementsByTagName("img");       // 获取 post 内所有 img
   cwidth = post.offsetWidth;
   for(var i = 0; i < imgs.length; i ++) {  // 对每个 img 进行调整
     var imgWidth = imgs[i].naturalWidth;
     if(imgWidth < cwidth) {
       imgs[i].style.marginLeft = (cwidth - imgWidth) / 2 + "px";
+    } else {
+      imgs[i].style.marginLeft = 0;
     }
   }
   
@@ -53,9 +55,12 @@ function setting() {
   for(var i = 0; i < tables.length; i ++) {
     var ta = tables[i].offsetWidth;
     var th = tables[i].getElementsByTagName("thead")[0].offsetWidth;
-    if(ta > th ) {
+    if(cwidth > th ) {
       tables[i].style.width = th + 1 + "px";
       tables[i].style.marginLeft = (cwidth - th) / 2 + "px";
+    } else {
+      tables[i].style.width = cwidth;
+      tables[i].style.marginLeft = 0;
     }
   }
 }
