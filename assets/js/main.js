@@ -45,10 +45,6 @@ function setting() {
     var imgWidth = imgs[i].naturalWidth;
     if(imgWidth < cwidth) {
       imgs[i].style.marginLeft = (cwidth - imgWidth) / 2 + "px";
-    } else if( cwidth < 608) {    // 手机端撑开
-      imgs[i].style.marginLeft = -16 + "px";
-    } else {
-      imgs[i].style.marginLeft = 0 + "px";
     }
   }
   
