@@ -37,9 +37,10 @@ function showWP() {
 // 对 post 内元素的自动化设置
 function setting() {
   var post = document.getElementsByClassName("post")[0];  // 获取 post 布局
+  
+  // 图片居中
   var imgs = post.getElementsByTagName("img");            // 获取 post 内所有 img
   cwidth = post.offsetWidth;
-  
   for(var i = 0; i < imgs.length; i ++) {  // 对每个 img 进行调整
     var imgWidth = imgs[i].naturalWidth;
     if(imgWidth < cwidth) {
@@ -47,7 +48,18 @@ function setting() {
     } else if( cwidth < 608) {    // 手机端撑开
       imgs[i].style.marginLeft = -16 + "px";
     } else {
-      imgs[i].style.marginLeft = 0;
+      imgs[i].style.marginLeft = 0 + "px";
+    }
+  }
+  
+  // 表格居中
+  var tables = post.getElementsByTagName("table");      // 获取所有的 table
+  for(var i = 0; i < tables.length; i ++) {
+    var ta = tables[i].offsetWidth;
+    var th = tables[i].getElementsByTagName("thead")[0].offsetWidth;
+    if(ta > th ) {
+      tables[i].style.width = th + 1 + "px";
+      tables[i].style.marginLeft = (cwidth - th) / 2 + "px";
     }
   }
 }
