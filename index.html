@@ -8,7 +8,7 @@ title: Home
 
 <h3>{{ group.name }}</h3>
   <ul>
-    {% for post in group.items %}
+    {% for post in group.items reversed %}
       <li>
         <div class="archive-date">{{ post.date | date: "%m-%d" }}</div>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
