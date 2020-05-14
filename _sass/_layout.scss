@@ -8,6 +8,12 @@
   min-height: calc(100vh - 8rem);  // 内容撑大，使底部固定
   margin: 0 auto;    // 居中
   padding: 0 1rem;   // 左右内边距设置
+  
+  @media (min-width: $width) {
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 40px 0 rgba(0,0,0,0.19);
+  }
 }
 
 // 页面布局
@@ -20,9 +26,25 @@
   text-align: center;
 }
 
+// 归档
+
+.archive-item {
+  border-bottom: 1px dashed grey;
+}
+
+.archive-item a:hover {
+  text-decoration: none;
+  color: #1A802E;
+}
+
 .archive-date {
   float: left;
   width: 4rem;
+  
+  @media (min-width: $width) {
+    float: right;
+    width: auto;
+  }
 }
 
 // 文章内容布局
@@ -48,7 +70,6 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   min-height: 4rem;      // 底部固定效果
-  border-bottom: 1px solid #999;
 }
 
 .nav a {
@@ -68,7 +89,6 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   min-height: 4rem;      // 底部固定效果
-  border-top: 1px solid #999;
 }
 
 .footer a {
