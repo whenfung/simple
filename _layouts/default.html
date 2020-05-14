@@ -2,30 +2,23 @@
 
 <html>
 
-  <!-- 拼接头部信息 -->
   {% include head.html %}
 
   <body>
+    
+    {% include nav.html %}
+    
     <div class="container" style="display: block;">
       
-      {% include nav.html %}
-      
       {{ content }}
-      
-      {% include footer.html %}
-      
-      <div class="top" onclick="toScroll()">
-        <i class="fa fa-arrow-up" aria-hidden="true"></i>
-      </div>
-      
-      <div class="new">
-        <a href="https://github.com/professordeng/simple/new/gh-pages/_post"><i class="fa fa-pencil-alt" aria-hidden="true"></i></a>
-      </div>
-      
+     
     </div>
     
-    <div class="wallpaper-button" onclick="showWP()">
-      <i class="fa fa-image" aria-hidden="true"></i>
+    {% include footer.html %}
+    
+    <div class="top" onclick="toScroll()">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </div>
+    
   </body>
 </html>

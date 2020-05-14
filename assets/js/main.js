@@ -20,16 +20,3 @@ function toScroll() {
     };
   }, 10)  // 每 10 毫秒调用一次，这样绝对顺滑
 }
-
-// 显示壁纸的按钮变化
-function showWP() {
-  var c = document.getElementsByClassName("container")[0];
-  var i = document.getElementsByClassName("wallpaper-button")[0].children[0];
-  if (c.style.display === "block") {
-    c.style.display = "none";
-    i.className = "fa fa-file-alt";
-  } else {
-    c.style.display = "block";
-    i.className = "fa fa-image";
-  }
-}

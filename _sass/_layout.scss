@@ -5,20 +5,15 @@
 // 网站整体布局
 .container {
   max-width: $width;
+  min-height: calc(100vh - 8rem);  // 内容撑大，使底部固定
   margin: 0 auto;    // 居中
   padding: 0 1rem;   // 左右内边距设置
-  
-  // 设置背景透明度, 为了放背景图
-  @media (min-width: 960px) {
-    background-color: $container-bg-color;
-    border-radius: .5rem;
-    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
 }
 
 // 页面布局
 .page {
-  margin-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .page-title {
@@ -32,7 +27,8 @@
 
 // 文章内容布局
 .post {                  
-  margin-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .post-title {
@@ -49,8 +45,9 @@
 .nav {
   color: #999;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: 4rem;      // 底部固定效果
   border-bottom: 1px solid #999;
 }
 
@@ -68,7 +65,9 @@
 .footer {
   color: #999;
   text-align: center;
-  margin-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: 4rem;      // 底部固定效果
   border-top: 1px solid #999;
 }
 
@@ -104,60 +103,11 @@
   }
 }
 
-// 显示壁纸按钮
-.wallpaper-button {
-  display: none;
-  cursor: pointer;
-  margin: 0;
-  padding: .5rem;
-  right: 1rem;
-  top: 1rem;
-  position: fixed;
-  z-index: 99;
-  
-  -webkit-tap-highlight-color: rgba(0,0,0,0); // 不显示蓝色框
-  
-  border-radius: 1rem;
-  box-shadow:  0px 0px 5px 1px inset;
-  background-color: rgba(255, 255, 255, 0.8);
-  
-  @media (min-width: $top-width) {
-    display: block;
-  }
-}
-
-// 新建文章按钮
-.new {
-  display: none;
-  cursor: pointer;
-  margin: 0;
-  padding: .5rem;
-  right: 1rem;
-  top: 4rem;
-  position: fixed;
-  z-index: 99;
-  
-  -webkit-tap-highlight-color: rgba(0,0,0,0); // 不显示蓝色框
-  
-  border-radius: 1rem;
-  box-shadow:  0px 0px 5px 1px inset;
-  background-color: rgba(255, 255, 255, 0.8);
-  
-  @media (min-width: $top-width) {
-    display: block;
-  }
-}
-
-.new a {
-  color: #333;
-}
-
 // 上下篇布局
 .prev-next {
   display: flex;                  // 弹性布局
   justify-content: space-between; // 两端对齐
-  width: calc(100% + 2rem);
-  margin-left: -1rem;
+  width: 100%;
   margin-bottom: 1rem;
 }
 
@@ -174,13 +124,11 @@
 }
 
 .prev {
-  border-top-right-radius: .5rem;
-  border-bottom-right-radius: .5rem;
+  border-radius: .5rem;
   background-color: rgba($color: #FFFFFF, $alpha: 0.8);
 }
 
 .next {
-  border-top-left-radius: .5rem;
-  border-bottom-left-radius: .5rem;
+  border-radius: .5rem;
   background-color: rgba($color: #FFFFFF, $alpha: 0.8);
 }

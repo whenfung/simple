@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 // 网页整体无内边距和外边距
@@ -26,11 +28,6 @@ html {
 body {
   color: $body-color;
   background-color: $body-bg;
-  
-  background-size: cover;         // 图片
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position:center;
 }
 
 // 设置链接的格式

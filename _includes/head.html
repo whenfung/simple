@@ -23,23 +23,6 @@
   <!-- 图标样式库 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13/css/all.min.css" />
   
-  <!-- 背景图 -->
-  <style type="text/css">
-    {% if page.wallpaper %}
-      @media (min-width: 960px) {
-        body {
-          background-image: url({{ site.cdn }}/{{ page.wallpaper }});
-        }
-      }
-    {% elsif site.bg %}
-      @media (min-width: 960px) {
-        body {
-          background-image: url({{ site.cdn }}/site.jpg);
-        }
-      }
-    {% endif %}
-  </style>
-  
   <!-- 评论 -->
   {% if site.gitalk.enable %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
