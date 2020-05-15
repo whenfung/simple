@@ -9,11 +9,8 @@
   margin: 0 auto;    // 居中
   padding: 0 1rem;   // 左右内边距设置
   
-  @media (min-width: $width) {
-    border-radius: 0.5rem;
-    background-color: white;
-    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 40px 0 rgba(0,0,0,0.19);
-  }
+  background-color: white;
+  border: 1px solid #dfe2e5;
 }
 
 // 页面布局
@@ -115,8 +112,7 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0); // 不显示蓝色框
   
   border-radius: 1rem;
-  box-shadow:  0px 0px 5px 1px inset;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #dfe2e5;
   
   @media (min-width: $top-width) {
     right: calc(50% - 23rem);
@@ -135,21 +131,19 @@
   color: #999;
   padding: .25rem .5rem;
   text-decoration: none;
-  box-shadow:  0px 0px 10px 1px;
+  border: 1px solid #dfe2e5;
   
   &:hover {
-    color: #333;
-    background-color: #C0FAD7;
+    color: #dfe2e5;
+    background-color: #333;
   }
 }
 
 .prev {
-  border-radius: .5rem;
   background-color: rgba($color: #FFFFFF, $alpha: 0.8);
 }
 
 .next {
-  border-radius: .5rem;
   background-color: rgba($color: #FFFFFF, $alpha: 0.8);
 }
 
