@@ -1,13 +1,14 @@
 # URL
-url: https://professordeng.com   # 域名
-baseurl: /simple                 # 根目录
+title: SIMPLE                        # 站点名
+description: A Jekyll Theme          # 站点描述
+url: https://professordeng.com       # 域名
+baseurl: /simple                     # 根目录
 
 # 社交帐号
 ## 会在页面底部显示
 github: professordeng
 mail: professordeng@qq.com
 weibo: codeng
-zhihu: professordeng
 linkedin: professordeng
 
 # 站点资源
