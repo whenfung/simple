@@ -22,10 +22,14 @@ cdn: https://cdn.jsdelivr.net/gh/professordeng/simple@gh-pages/assets/img # CDN 
 bg: true    # 是否使用 Bing 每日美图
 
 # Jekyll 插件
+## Docs: https://pages.github.com/versions/
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jemoji
+  - jekyll-avatar
+  - jekyll-mentions
 
 # 评论系统（本主题使用 gitalk）
 ## Docs: https://github.com/gitalk/gitalk/blob/master/readme-cn.md
