@@ -16,6 +16,9 @@ title: 搜索
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '{{ site.baseurl }}/search.json',
-    noResultsText: 'No results found'
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>', // 文章列表模板
+    noResultsText: '没有搜索到相关文章', // 无搜索数据提示语
+    limit: 10,     // 返回最大文章数
+    fuzzy: false   // 是否模糊匹配
   })
 </script>
