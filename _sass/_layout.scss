@@ -124,11 +124,12 @@
 #markdown-toc {
   list-style: none;
   position: fixed;
-  width: calc(50vw - 19rem);
+ 
   top: 4rem;
   right: 0;
-  
-  text-align: center;
+   
+  width: calc(50vw - 19rem);      // 宽度是左侧所有空闲部分
+  max-height: calc(100vh - 8rem); // 高度除去导航栏和页脚 
 }
 
 // 上下篇布局
