@@ -81,6 +81,10 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   padding: .8rem .5rem;
+  
+  &.highlight {  // 代码水平滚动
+    overflow-x: auto;
+  }
 }
 
 pre code {   // 去除 pre 中 code 的格式
@@ -88,11 +92,6 @@ pre code {   // 去除 pre 中 code 的格式
   font-size: 100%;
   color: inherit;
   background-color: transparent;
-}
-
-// 代码水平滚动
-pre.highlight {
-  overflow-x: auto;
 }
 
 // 数学公式水平滚动

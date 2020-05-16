@@ -3,7 +3,19 @@ layout: page
 title: 搜索
 ---
 
+<!-- Html Elements for Search -->
 <div id="search-container">
-  <input type="text" id="search-input" placeholder="输入关键词">
+  <input type="text" id="search-input" placeholder="search...">
   <ul id="results-container"></ul>
 </div>
+
+<script src="{{ site.js }}/simple-jekyll-search.min.js"></script>
+
+<script>
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ site.baseurl }}/search.json',
+    noResultsText: 'No results found'
+  })
+</script>
