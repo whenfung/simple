@@ -115,21 +115,39 @@
   background-color: #dfe2e5;
   
   @media (min-width: $top-width) {
-    right: calc(50% - 23rem);
+    right: calc(50vw - 23rem);
   }
 }
 
 // 目录布局
 
 #markdown-toc {
+  display: none;
   list-style: none;
   position: fixed;
+  padding-left: 0;
  
   top: 4rem;
   right: 0;
    
   width: calc(50vw - 19rem);      // 宽度是左侧所有空闲部分
   max-height: calc(100vh - 8rem); // 高度除去导航栏和页脚 
+  @media (min-width: $top-width) {
+    display: block;
+  }
+  
+  & ol {
+    padding-left: 0;
+  } 
+  
+  & li {
+    white-space:nowrap;        /*不让文字内容换行*/
+    overflow:hidden;           /*文字溢出的部分隐藏起来*/
+    text-overflow:ellipsis;    /*用...替代溢出的部分*/
+    
+    margin: 0 1rem;
+    padding-left: 0;
+  }
 }
 
 // 上下篇布局
@@ -162,4 +180,10 @@
 
 #gitalk-container {
   padding-bottom: 1rem;
+}
+
+.theme {
+  text-align: center;
+  font-size: .8rem;
+  margin-bottom: 1rem;
 }
