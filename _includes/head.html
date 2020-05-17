@@ -23,12 +23,6 @@
   <!-- 图标样式库 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13/css/all.min.css" />
   
-  <!-- 评论 -->
-  {% if site.gitalk.enable %}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-  {% endif %}
-  
   <!-- 数学公式渲染 -->
   {% if page.mathjax %}
     {% include mathjax.html %}
@@ -38,6 +32,12 @@
   {% if page.mermaid %}
   <script src="https://cdn.jsdelivr.net/npm/mermaid@8.5.0/dist/mermaid.min.js"></script>
   <script>mermaid.initialize({startOnLoad:true});</script>
+  {% endif %}  
+
+  <!-- 评论 -->
+  {% if site.gitalk.enable %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
   {% endif %}
   
   <!-- 谷歌分析 -->
