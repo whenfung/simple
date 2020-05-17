@@ -1,13 +1,50 @@
-$html-font-family: Arial, "Microsoft YaHei", sans-serif;   // 正文字体
-$html-font-size-small: 16px;  // 手机端字体
-$html-font-size-big: 20px;    // PC 端字体
-$html-line-height: 1.5;       // 行高
+:root {
+  --gray-000: #f8f9fa;
+  --gray-100: #f1f3f5;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #868e96;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  
+  --red: #fa5252;
+  --pink: #e64980;
+  --grape: #be4bdb;
+  --purple: #7950f2;
+  --indigo: #4c6ef5;
+  --blue: #228be6;
+  --cyan: #15aabf;
+  --teal: #12b886;
+  --green: #40c057;
+  --yellow: #fab005;
+  --orange: #fd7e14;
 
-$body-bg: white;              // 背景色
-$body-color: #495057;         // 字色
+  --blue-300: #74c0fc;
+  --blue-400: #4dabf7;
+  --yellow-100: #fff3bf;
 
-$link-color: #228be6;         // 链接色
-$link-hover-color: #4dabf7;   // 被选中时链接色
+  --font: Arial, "Microsoft YaHei", sans-serif;   // 正文字体
+  --font-size: 16px;                              // 字体
+  --line-height: 1.5;                             // 行高
+  
+  --body-color: var(--gray-700);
+  --body-bg: #fff;
+  
+  --link-color: var(--blue);
+  --link-hover-color: #4dabf7;
+  
+  --border-radius: .25rem;
+  
+}
+
+@media (min-width: 38rem) {
+  :root {
+    --font-size: 20px;    // 大屏幕
+  }
+}
 
 $img-border-radius: 5px;      // 图标圆滑处理
 

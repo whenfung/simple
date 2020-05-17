@@ -15,29 +15,25 @@ body {
 
 // 设置根元素的字体、字号、行高
 html {
-  font-family: $html-font-family;
-  font-size: $html-font-size-small;
-  line-height: $html-line-height;
-  
-  @media (min-width: $width) {
-    font-size: $html-font-size-big;
-  }
+  font-family: var(--font);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 }
 
 // 设置整体的字色、背景色、背景图
 body {
-  color: $body-color;
-  background-color: $body-bg;
+  color: var(--gray-700);
+  background-color: var(--body-bg);
 }
 
 // 设置链接的格式
 a {
-  color: $link-color;
+  color: var(--link-color);
   text-decoration: none;
   
   &:hover,
   &:focus {
-    color: $link-hover-color;
+    color: var(--link-hover-color);
     text-decoration: underline;
   }
 }
@@ -46,7 +42,7 @@ a {
 img {
   max-width: 100%;      // 最大宽度
   height: auto;
-  border-radius: $img-border-radius;
+  border-radius: var(--border-radius);
 }
 
 // 表格 
