@@ -3,25 +3,25 @@
 // 标题, 段落, 列表和一些文章可能出现的元素
 
 h1, h2, h3, h4, h5, h6 {
-  color: $heading-color;
-  font-weight: $heading-weight;
+  color: var(--heading-color);
+  font-weight: var(--heading-weight);
   line-height: 1.25;
   margin-bottom: .5rem;
 }
 
 h1 {
-  font-size: $h1-font-size;
+  font-size: var(--h1-font-size);
 }
 
 h2 {
   margin-top: 1.5rem;
-  font-size: $h2-font-size;
+  font-size: var(--h2-font-size);
   border-bottom: 1px solid #dfe2e5;
 }
 
 h3 {
   margin-top: 1rem;
-  font-size: $h3-font-size;
+  font-size: var(--h3-font-size);
 }
 
 h4, h5, h6 {
@@ -50,10 +50,8 @@ hr {
 blockquote {
   margin: .8rem 0;            // 上下外边距
   padding: .5rem 1rem;        // 上下、左右内边距
-  color: $blockquote-color;   // 字色
-  border-left: .25rem solid $blockquote-border-left;  // 左边框色
-
-  width: 100%;
+  color: var(--gray-500);   // 字色
+  border-left: .25rem solid var(--border-color);  // 左边框色
   
   p:last-child {
     margin-bottom: 0;
@@ -62,15 +60,15 @@ blockquote {
 
 code,
 pre {
-  font-family: $code-font-family;   // 代码字体
-  font-size: $code-font-size;       // 代码字号
-  background-color: $code-bg;       // 代码背景色
+  font-family: var(--code-font);          // 代码字体
+  font-size: var(--code-font-size);       // 代码字号
+  background-color: var(--code-bg);       // 代码背景色
 }
 
 code {
   padding: .2rem .4rem;
-  color: $code-color;                  // 代码颜色
-  border-radius: $code-border-radius;  // 圆角边框
+  color: var(--code-color);                  // 代码颜色
+  border-radius: 3px;  // 圆角边框
 }
 
 // 代码段格式设置
@@ -104,7 +102,7 @@ video {
   width: calc(100% + 2rem);
   margin-left: -1rem;
   
-  @media (min-width: $width) {
+  @media (min-width: 38rem) {
     margin-left: 0;
     width: 100%;
   }
@@ -120,7 +118,7 @@ iframe {
   height: 56.25vw;
   margin-left: -1rem;
   
-  @media (min-width: $width) {
+  @media (min-width: 38rem) {
     width: 100%;
     height: 405px;
     margin-left: 0;

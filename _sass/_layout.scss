@@ -4,7 +4,7 @@
 
 // 网站整体布局
 .container {
-  max-width: $width;
+  max-width: 38rem;
   min-height: calc(100vh - 8rem);  // 内容撑大，使底部固定
   margin: 0 auto;    // 居中
   padding: 0 1rem;   // 左右内边距设置
@@ -35,7 +35,7 @@
   float: left;
   width: 4rem;
   
-  @media (min-width: $width) {
+  @media (min-width: 38rem) {
     float: right;
     width: auto;
   }
@@ -112,7 +112,7 @@
   border-radius: 50%;
   background-color: #dfe2e5;
   
-  @media (min-width: $top-width) {
+  @media (min-width: 60rem) {
     right: calc(50vw - 23rem);
   }
 }
@@ -130,7 +130,7 @@
    
   width: calc(50vw - 19rem);      // 宽度是左侧所有空闲部分
   max-height: calc(100vh - 8rem); // 高度除去导航栏和页脚 
-  @media (min-width: $top-width) {
+  @media (min-width: 60rem) {
     display: block;
   }
   

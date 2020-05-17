@@ -36,8 +36,23 @@
   --link-color: var(--blue);
   --link-hover-color: #4dabf7;
   
+  --border-color: var(--gray-300);
   --border-radius: .25rem;
   
+  --heading-color: var(--gray-900);
+  --heading-weight: 500;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  
+  --code-font: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;  // 代码字体
+  --code-font-size: .9rem;       // 代码字号
+  --code-bg: #f5f5f5; 
+  --code-color: #bf616a;
+  
+  --spacer: 1rem;
+  --spacer-2: calc(var(--spacer) * 1.5);
+  --spacer-3: calc(var(--spacer) * 3);
 }
 
 @media (min-width: 38rem) {
@@ -45,24 +60,3 @@
     --font-size: 20px;    // 大屏幕
   }
 }
-
-$img-border-radius: 5px;      // 图标圆滑处理
-
-$heading-color: #212529;      // 标题色
-$heading-weight: 500;         // 标题粗细程度
-$h1-font-size: 1.75rem;       // 一级标题字号
-$h2-font-size: 1.5rem;        // 二级标题字号
-$h3-font-size: 1.25rem;       // 三级标题字号
-
-$blockquote-color: #adb5bd;         // 引用色
-$blockquote-border-left: #dee2e6;   // 引用颜色
-
-$code-font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;  // 代码字体
-$code-font-size: .9rem;       // 代码字号
-$code-bg: #f5f5f5;            // 代码背景
-$code-border-radius: 3px;     // 代码框圆滑化
-$code-color: #bf616a;         // 代码颜色
-
-$width: 38rem;         // 移动端和 PC 端的宽度分界线
-
-$top-width: 60rem;     // 快速返回键的最宽宽度
