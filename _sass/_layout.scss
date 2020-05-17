@@ -120,10 +120,11 @@
 // 目录布局
 
 #markdown-toc {
+  font-size: 16px;
   display: none;
   list-style: none;
   position: fixed;
-  padding-left: 0;
+  padding-left: .5rem;
  
   top: 4rem;
   right: 0;
@@ -131,19 +132,28 @@
   width: calc(50vw - 19rem);      // 宽度是左侧所有空闲部分
   max-height: calc(100vh - 8rem); // 高度除去导航栏和页脚 
   @media (min-width: 60rem) {
-    display: block;
+    display: inline-block;
+  }
+  
+  &::before {
+    content: "目录";
+    padding-left: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
   }
   
   & ol {
     padding-left: 0;
+    margin-bottom: 0;
   } 
   
   & li {
+    max-width: 5rem;
     white-space:nowrap;        /*不让文字内容换行*/
     overflow:hidden;           /*文字溢出的部分隐藏起来*/
     text-overflow:ellipsis;    /*用...替代溢出的部分*/
     
-    margin: 0 1rem;
+    margin: 0 .5rem;
     padding-left: 0;
   }
 }
