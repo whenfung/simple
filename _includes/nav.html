@@ -1,9 +1,6 @@
 <nav class="nav">
-  {% if page.title != "首页" %}
-    <a href="{{ site.baseurl }}/"><i class="fa fa-home" aria-hidden="true"></i>首页</a>
-  {% endif %}
-    
+  <a href="{{ site.baseurl }}/"><i class="fa fa-home" aria-hidden="true"></i>首页</a>
+  <a href="{{ site.baseurl }}/archives.html"><i class="fa fa-archive" aria-hidden="true"></i>归档</a>
   <a href="https://github.com/professordeng/simple/edit/gh-pages/{{ page.path }}"><i class="fa fa-edit" aria-hidden="true"></i>编辑</a>
   <a href="https://github.com/professordeng/simple/new/gh-pages/_post"><i class="fa fa-pencil-alt" aria-hidden="true"></i>新建</a>
-  <a href="{{ site.baseurl }}/search.html"><i class="fa fa-search" aria-hidden="true"></i>搜索</a>
 </nav>

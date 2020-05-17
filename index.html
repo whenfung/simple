@@ -1,19 +1,28 @@
 ---
-layout: page
+layout: default
 title: 首页
 ---
 
-{% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y' " %}
-{% for group in posts_by_year %}
+<div class="home">
 
-<h3>{{ group.name }}</h3>
-  <ul class="archives">
-    {% for post in group.items reversed %}
-      <li class="archive-item">
-        <div class="archive-date">{{ post.date | date: "%m-%d" }}</div>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  <!-- Html Elements for Search -->
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="search...">
+    <ul id="results-container"></ul>
+  </div>
 
-{% endfor %}
+</div>
+
+<script src="{{ site.js }}/simple-jekyll-search.min.js"></script>
+
+<script>
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ site.baseurl }}/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>', // 文章列表模板
+    noResultsText: '没有搜索到相关文章', // 无搜索数据提示语
+    limit: 10,     // 返回最大文章数
+    fuzzy: false   // 是否模糊匹配
+  })
+</script>
