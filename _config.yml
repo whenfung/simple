@@ -50,7 +50,7 @@ gitalk:
 ## Docs: https://analytics.google.com/analytics/web/
 google-analytics: UA-165708741-1
 
-# 默认 _post 文件夹用 post 布局，不用改
+# 默认 _post 文件夹用 post 布局
 defaults:
   - scope:
       path: ""

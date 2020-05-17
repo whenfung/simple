@@ -6,13 +6,6 @@
   padding: 0;
 }
 
-// 网页整体无内边距和外边距
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 // 设置根元素的字体、字号、行高
 html {
   font-family: var(--font);
@@ -41,19 +34,17 @@ a {
 // 设置图片的格式
 img {
   max-width: 100%;      // 最大宽度
-  height: auto;
   border-radius: var(--border-radius);
 }
 
 // 表格 
 table {
   display: block;
-  border-collapse: collapse;      // 合并格子之间的线
-  
+  overflow-x: auto;
   width: 100%;
-  margin-bottom: 1rem;
   
-  overflow: auto;
+  border-collapse: collapse;      // 合并格子之间的线
+  margin-bottom: 1rem;
 }
 
 // 表格头和表格项
