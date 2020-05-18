@@ -36,15 +36,19 @@ document.querySelector('#search-input').addEventListener('keyup', function(e) {
 });
 
 function search(keyword) {
-  var html = '';
-  searchData.forEach(function(item){
-    postContent = item.title + item.content;
+  var sum = 10;   // 限制最多显示 10 条结果
+  var html = '';  // 显示部分
+  var postContent = '';
+  for(var i = 0; i < searchData.length; i ++) {
+    postContent = searchData[i].title + searchData[i].content;
     if(postContent.toLowerCase().indexOf(keyword.toLowerCase()) > -1) { // 是否包含关键字
-      html += '<li><a href="' + item.url + '">' + item.title + '</a></li>';
+      html += '<li><a href="' + searchData[i].url + '">' + searchData[i].title + '</a></li>';
+      sum --;
+      if (sum === 0) break;
     }
-  });
+  }
   if(html === '') {
-    html += '<li>无相关结果</li>'
+    html += '<li>无相关结果</li>';
   }
   result.innerHTML = html;
 };
