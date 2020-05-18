@@ -1,5 +1,5 @@
 ---
-title: 快速开始
+title: 如何使用 simple 主题
 ---
 
 [simple](https://professordeng.com/simple) 是针对移动端开发的响应式 Jekyll 主题，有如下特性：

@@ -1,8 +1,8 @@
 ---
-title: markdown 语法
+title: GitHub 的 markdown 语法
 ---
 
-主题提供了完全兼容 GitHub 的 markdown 语法，因此你可以通过 [Markdown syntax](https://guides.github.com/features/mastering-markdown/) 进行文章的格式化。
+主题提供了完全兼容 GitHub 的 markdown 语法，因此你使用 [GitHub Markdown](https://guides.github.com/features/mastering-markdown/)。
 
 本主题默认 markdown 渲染器是 [kramdown](https://kramdown.gettalong.org/)
 

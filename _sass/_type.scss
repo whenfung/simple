@@ -92,11 +92,6 @@ pre code {   // 去除 pre 中 code 的格式
   background-color: transparent;
 }
 
-// 数学公式水平滚动
-.MJXc-display {
-  overflow-x: auto;
-}
-
 // 多媒体支持
 video {
   width: calc(100% + 2rem);
@@ -123,6 +118,12 @@ iframe {
     height: 405px;
     margin-left: 0;
   }
+}
+
+// 数学公式水平滚动
+.MJXc-display {
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 // 渲染图适应
