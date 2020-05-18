@@ -7,22 +7,47 @@ title: 首页
 
   <!-- Html Elements for Search -->
   <div id="search-container">
-    <input type="text" id="search-input" placeholder="请输入您要搜索的内容...">
+    <input type="text" id="search-input"">
     <ul id="results-container"></ul> 
   </div>
 
 </div>
 
-<script src="{{ site.js }}/simple-jekyll-search.min.js"></script>
+<script> 
+var searchData;
+var input = document.querySelector('#search-input');
+var result = document.querySelector('#results-container');
+var xhrSearch = new XMLHttpRequest();
+xhrSearch.open('GET', '{{ site.baseurl }}/search.json', true);
+xhrSearch.onreadystatechange = function() {
+    if (xhrSearch.readyState == 4 && xhrSearch.status == 200) {
+        searchData = JSON.parse(xhrSearch.responseText);
+        input.placeholder = "请输入关键词，回车搜索";
+    }
+};
+xhrSearch.send(null);
 
-<script>
-  window.simpleJekyllSearch = new SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: '{{ site.baseurl }}/search.json',
-    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>', // 文章列表模板
-    noResultsText: '没有搜索到相关文章', // 无搜索数据提示语
-    limit: 10,     // 返回最大文章数
-    fuzzy: false   // 是否模糊匹配
-  })
+document.querySelector('#search-input').addEventListener('keyup', function(e) {
+  if(e.keyCode == 13){
+    if(this.value != '') {
+      search(this.value);
+    }
+  }
+});
+
+function search(keyword) {
+  var html = '';
+  searchData.forEach(function(item){
+    postContent = item.title + item.content;
+    if(postContent.toLowerCase().indexOf(keyword.toLowerCase()) > -1) {
+      console.log(item.title);
+      html += '<li><a href="' + item.url + '">' + item.title + '</a></li>';
+    }
+  });
+  if(html === '') {
+    html += '<li>无相关结果</li>'
+  }
+  result.innerHTML = html;
+};
+
 </script>

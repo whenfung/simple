@@ -1,13 +1,11 @@
 // 检测滚动栏，显示返回顶部的按钮
 window.onscroll = function() {
   var t = document.documentElement.scrollTop || document.body.scrollTop;
-  var top = document.getElementsByClassName("top");
-  if(top.length > 0) {   // 有时候没有获取到 top
-    if( t > 300 ) { 
-      top[0].style.display = "block";
-    } else {
-      top[0].style.display = "none";
-    }
+  var top = document.querySelector(".top");  // 获取第一个绑定 top 的元素
+  if( t > 300 ) { 
+    top.style.display = "block";
+  } else {
+    top.style.display = "none";
   }
 };
 
