@@ -39,8 +39,7 @@ function search(keyword) {
   var html = '';
   searchData.forEach(function(item){
     postContent = item.title + item.content;
-    if(postContent.toLowerCase().indexOf(keyword.toLowerCase()) > -1) {
-      console.log(item.title);
+    if(postContent.toLowerCase().indexOf(keyword.toLowerCase()) > -1) { // 是否包含关键字
       html += '<li><a href="' + item.url + '">' + item.title + '</a></li>';
     }
   });
