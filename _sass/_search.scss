@@ -18,8 +18,11 @@ input {
     border-bottom: 1px dashed black;
   }
   
-  & a:hover {
-    text-decoration: none;
-    color: black;
+  & a {
+    color: darkmagenta;
+    &:hover {
+      text-decoration: none;
+      color: black;
+    }
   }
 }
