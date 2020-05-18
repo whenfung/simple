@@ -59,7 +59,7 @@
 }
 
 // 导航栏布局
-.nav {
+.nav { 
   color: #999;
   text-align: center;
   padding-top: 1rem;
@@ -70,6 +70,8 @@
     color: #999;
     padding: .5rem;
     text-decoration: none;
+    border-radius: var(--border-radius);
+    background-color: rgba($color: #F7F7F7, $alpha: 0.5);
     
     &:hover {
       color: #333;
@@ -90,6 +92,8 @@
     color: #999;
     padding: .8rem;
     text-decoration: none;
+    border-radius: var(--border-radius);
+    background-color: rgba($color: #F7F7F7, $alpha: 0.5);
     
     &:hover {
       color: #333;
@@ -193,4 +197,9 @@
   text-align: center;
   font-size: .8rem;
   min-height: 4rem;
+  & span {
+    padding: .5rem 1rem;
+    border-radius: var(--border-radius);
+    background-color: rgba($color: #F7F7F7, $alpha: 0.5);
+  }
 }
