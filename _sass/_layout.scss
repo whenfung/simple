@@ -105,7 +105,7 @@
 .top{
   cursor: pointer;    // 选中时显示手指
   padding: .5rem;
-  bottom: 1rem;       // 和底部距离
+  bottom: 2rem;       // 和底部距离
   right: 1rem;        // 和右边框距离
   position: fixed;    // 回滚键固定
   z-index: 99;        // 在所有页面上方
@@ -116,6 +116,7 @@
   background-color: #dfe2e5;
   
   @media (min-width: 60rem) {
+    bottom: 1rem;
     right: calc(50vw - 23rem);
   }
 }
