@@ -30,6 +30,4 @@ Jekyll 默认用 kramdown 作为 markdown 渲染器[^1]，生成的列表可以�
 
 这是标题三
 
-## 长标题题题题题题题题题
-
 [^1]: [kramdown 目录生成语法](https://kramdown.gettalong.org/converter/html.html)
