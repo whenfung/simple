@@ -5,11 +5,11 @@ title: 快速开始
 [simple](https://professordeng.com/simple) 是针对移动端开发的响应式 Jekyll 主题，有如下特性：
 
 1. 在线编辑、新建、发布文章
-2. 使用 Markdown 写文章（GitHub 官方语法）
-3. 使用 LaTex 语法编辑公式（MathJax 库支持）
-4. 使用流程图（mermaid 库支持）
+2. 支持 GitHub 官方 markdown 语法
+3. 使用 LaTex 语法编辑数学公式
+4. 使用流程图
 5. 在文章中嵌入 B 站、Youtube 视频
-6. 评论系统（gitalk 支持）
+6. gitalk 评论系统
 8. 原生 JS 实现站内搜索
 
 那么强烈推荐使用这款主题。
