@@ -1,4 +1,4 @@
-input {
+#search-container input {
   margin-top: 4rem;
   outline: none;
   padding: .5rem 1rem;
@@ -7,7 +7,7 @@ input {
   background-color: rgba($color: #fff, $alpha: 0.5);
 }
 
-#results-container {
+#results-container { 
   list-style: none;
   border-left: 2px solid #dfe2e5;
   border-right: 2px solid #dfe2e5;
