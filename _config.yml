@@ -6,11 +6,13 @@ baseurl: /simple                     # 根目录
 
 # 社交帐号
 ## 会在页面底部显示，建议挑 4 个
-github: professordeng
-weibo: codeng
+github: professordeng/simple
+weibo:
+telegram: jekyll_simple
 zhihu: professordeng
-mail: professordeng@qq.com
 linkedin:
+mail: professordeng@qq.com
+
 
 # 站点资源
 img: /simple/assets/img          # 图片库
