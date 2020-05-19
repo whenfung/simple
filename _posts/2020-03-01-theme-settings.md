@@ -62,7 +62,7 @@ title: 如何使用 simple 主题
 
 为了让小白快速入手，我写了一系列关于主题的设置文章，有兴趣可到 [归档](/simple/archives.html) 中查看，包括不限于：
 
-[^1]: 待定
+[^1]: [在线编辑、创建、发布文章](https://professordeng.com/simple/2020/03/02/edit-online.html)
 [^2]: [GitHub markdown](https://professordeng.com/simple/2020/03/06/GitHub-markdown.html)
 [^3]: [MathJax 提供数学渲染](https://professordeng.com/simple/2020/03/07/MathJax.html)
 [^4]: [mermaid 提供流程图渲染](https://professordeng.com/simple/2020/03/09/mermaid.html)

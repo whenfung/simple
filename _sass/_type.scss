@@ -92,6 +92,12 @@ pre code {   // 去除 pre 中 code 的格式
   background-color: transparent;
 }
 
+// 脚注
+
+.footnotes p {
+  margin-bottom: 0;
+}
+
 // 多媒体支持
 video {
   width: calc(100% + 2rem);
