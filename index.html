@@ -3,17 +3,22 @@ layout: default
 title: 首页
 ---
 
-<div class="home">
-
+<div class="page">
   <!-- Html Elements for Search -->
   <div id="search-container">
     <input type="text" id="search-input"">
     <ul id="results-container"></ul> 
   </div>
+  
+  <div class="tips">
+    <a href = "https://professordeng.com/simple/2020/03/01/theme-settings.html">快速开始</a>
+    <a href = "https://github.com/professordeng/simple">查看源码</a>
+  </div>
 
 </div>
 
 <script> 
+// 全局搜索脚本
 var searchData;
 var input = document.querySelector('#search-input');
 var result = document.querySelector('#results-container');
@@ -48,7 +53,7 @@ function search(keyword) {
     }
   }
   if(html === '') {
-    html += '<li>无相关结果</li>';
+    html += '<li>无相关结果，<a href="{{ site.baseurl }}/archives.html">去归档找找？</a></li>';
   }
   result.innerHTML = html;
 };

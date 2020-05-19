@@ -26,3 +26,21 @@
     }
   }
 }
+
+.tips {
+  margin-top: 4rem;
+  text-align: center;
+  & a {
+    margin: .5rem;
+    padding: .8rem;
+    color: darkmagenta;
+    border-radius: var(--border-radius);
+    background-color: rgba($color: #fff, $alpha: 0.5); 
+    
+    &:hover {
+      text-decoration: none;
+      color: white;
+      background-color: rgba($color: #000, $alpha: 0.5); 
+    }
+  }
+}
