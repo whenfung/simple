@@ -10,16 +10,18 @@ window.onscroll = function() {
   }
   
   // 高亮目录
-  var subTitles = document.querySelectorAll('.post h2, .post h3'); // 所有标题
+  if (document.querySelector('.tocactive')) {  // 首先清除原有高亮
+      document.querySelector('.tocactive').classList.remove('tocactive');
+  }
   
+  var subTitles = document.querySelectorAll('.post h2, .post h3'); // 所有标题
   for (var i = 0; i < subTitles.length; i++) {
     if (subTitles[i].offsetTop + 2 >= t || i === subTitles.length - 1) {         // 可视窗口及下方的第一个标题
-      if (document.querySelector('.tocactive')) {  // 清除原有高亮
-          document.querySelector('.tocactive').classList.remove('tocactive');
-      }
-      if(i > 0 && subTitles[i].offsetTop - 2 >= t) {  // 标题上方还有一些内容
-        document.querySelector('#markdown-toc-' + subTitles[i-1].textContent).classList.add('tocactive');
-      } else {
+      if(subTitles[i].offsetTop - 2 >= t) {  // 标题上方还有一些内容
+        if( i > 0) {  // 渲染上一个标题
+          document.querySelector('#markdown-toc-' + subTitles[i-1].textContent).classList.add('tocactive');
+        }
+      } else {  // 渲染当前标题
         document.querySelector('#markdown-toc-' + subTitles[i].textContent).classList.add('tocactive');
       }
       break;
