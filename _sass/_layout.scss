@@ -54,6 +54,7 @@
 
 // 回到顶部按钮设计
 .top{
+  display: none;
   cursor: pointer;    // 选中时显示手指
   padding: .5rem;
   bottom: 2rem;       // 和底部距离
