@@ -57,6 +57,11 @@
   }
 }
 
+.tocactive {  // 当前标题高亮为黑色
+  font-weight: bold;
+  color: black;
+}
+
 // 上下篇布局
 .prev-next {
   display: flex;                  // 弹性布局

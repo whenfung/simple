@@ -1,11 +1,25 @@
-// 检测滚动栏，显示返回顶部的按钮
+// 检测滚动栏
 window.onscroll = function() {
+  // 是否显示回到顶部按钮
   var t = document.documentElement.scrollTop || document.body.scrollTop;
   var top = document.querySelector(".top");  // 获取第一个绑定 top 的元素
   if( t > 300 ) { 
     top.style.display = "block";
   } else {
     top.style.display = "none";
+  }
+  
+  // 高亮目录
+  var subTitles = document.querySelectorAll('.post h2, .post h3'); // 所有标题
+  
+  for (var i = 0; i < subTitles.length; i++) {
+    if (subTitles[i].offsetTop + 1 >= t) {             // 可视窗口的第一个标题
+      if (document.querySelector('.tocactive')) {  // 清除原有高亮
+          document.querySelector('.tocactive').classList.remove('tocactive');
+      }
+      document.querySelector('#markdown-toc-' + subTitles[i].textContent).classList.add('tocactive');
+      break;
+    }
   }
 };
 
