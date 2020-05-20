@@ -20,9 +20,6 @@ css: /simple/assets/css          # CSS 样式库
 js:  /simple/assets/js           # js 库
 cdn: https://cdn.jsdelivr.net/gh/professordeng/simple@gh-pages/assets/img # CDN 加速
 
-# 背景图片
-bg: home.jpg
-
 # Jekyll 插件
 ## Docs: https://pages.github.com/versions/
 plugins:

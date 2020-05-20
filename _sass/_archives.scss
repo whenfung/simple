@@ -1,0 +1,14 @@
+// 归档
+.archive-item {
+  border-bottom: 1px dashed grey;
+}
+
+.archive-date {
+  float: left;
+  width: 4rem;
+  
+  @media (min-width: 38rem) {
+    float: right;
+    width: auto;
+  }
+}

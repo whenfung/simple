@@ -2,54 +2,13 @@
 //
 // Styles for managing the structural hierarchy of the site.
 
-// 网站整体布局
+// 内容部分
 .container {
   max-width: 38rem;
   min-height: calc(100vh - 12rem);  // 内容撑大，使底部固定
   margin: 0 auto;    // 居中
   padding: 0 1rem;   // 左右内边距设置
   background-color: var(--container-bg);
-}
-
-// 页面布局
-.page {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.page-title {
-  text-align: center;
-}
-
-// 归档
-.archive-item {
-  border-bottom: 1px dashed grey;
-}
-
-.archive-date {
-  float: left;
-  width: 4rem;
-  
-  @media (min-width: 38rem) {
-    float: right;
-    width: auto;
-  }
-}
-
-// 文章内容布局
-.post {                  
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.post-title {
-  text-align: center;
-}
-
-.post-date {
-  text-align: center;
-  font-size: .75rem;
-  color: #adb5bd;
 }
 
 // 导航栏布局
@@ -111,81 +70,6 @@
     bottom: 1rem;
     right: calc(50vw - 23rem);
   }
-}
-
-// 目录布局
-
-#markdown-toc {
-  font-size: 16px;
-  display: none;
-  list-style: none;
-  position: fixed;
-  padding-left: .5rem;
- 
-  top: 4rem;
-  right: 0;
-   
-  width: calc(50vw - 19rem);      // 宽度是左侧所有空闲部分
-  max-height: calc(100vh - 8rem); // 高度除去导航栏和页脚 
-  @media (min-width: 60rem) {
-    display: inline-block;
-  }
-  
-  &::before {
-    content: "目录";
-    padding-left: .5rem;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  & ol {
-    padding-left: 0;
-    margin-bottom: 0;
-  } 
-  
-  & li {
-    max-width: 5rem;
-    white-space:nowrap;        /*不让文字内容换行*/
-    overflow:hidden;           /*文字溢出的部分隐藏起来*/
-    text-overflow:ellipsis;    /*用...替代溢出的部分*/
-    
-    margin: 0 .5rem;
-    padding-left: 0;
-  }
-}
-
-// 上下篇布局
-.prev-next {
-  display: flex;                  // 弹性布局
-  justify-content: space-between; // 两端对齐
-  width: 100%;
-  margin-bottom: 1rem;
-  
-  & a {
-    display: block;
-    border: 1px solid #dfe2e5;
-    color: #999;
-    padding: .25rem .5rem;
-    text-decoration: none;
-    
-    &:hover {
-      color: #dfe2e5;
-      background-color: #333;
-    }
-  }
-}
-
-.prev {
-  max-width: 50%;
-}
-
-.next {
-  max-width: 50%;
-  text-align: right;
-}
-
-#gitalk-container {
-  padding-bottom: 1rem;
 }
 
 .theme {
