@@ -13,14 +13,14 @@ layout: default
 <div class="prev-next">
   <div class="prev">
   {% if page.previous %}
-    <a href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title }}">
-      <i class="fa fa-angle-left" aria-hidden="true"></i>上一篇</a>
+    <a href="{{ page.previous.url | relative_url }}">
+      <i class="fa fa-angle-left" aria-hidden="true"></i>{{ page.previous.title | truncate: 10 }}</a>
   {% endif %}
   </div>
   
   <div class="next">
   {% if page.next %}
-    <a href="{{ page.next.url | relative_url }}" title="{{ page.next.title }}">下一篇
+    <a href="{{ page.next.url | relative_url }}">{{ page.next.title | truncate: 10 }}
       <i class="fa fa-angle-right" aria-hidden="true"></i></a>
   {% endif %}
   </div>
