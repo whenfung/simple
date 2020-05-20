@@ -13,7 +13,7 @@ window.onscroll = function() {
   var subTitles = document.querySelectorAll('.post h2, .post h3'); // 所有标题
   
   for (var i = 0; i < subTitles.length; i++) {
-    if (subTitles[i].offsetTop + 2 >= t) {         // 可视窗口及下方的第一个标题
+    if (subTitles[i].offsetTop + 2 >= t || i === subTitles.length - 1) {         // 可视窗口及下方的第一个标题
       if (document.querySelector('.tocactive')) {  // 清除原有高亮
           document.querySelector('.tocactive').classList.remove('tocactive');
       }
@@ -23,7 +23,7 @@ window.onscroll = function() {
         document.querySelector('#markdown-toc-' + subTitles[i].textContent).classList.add('tocactive');
       }
       break;
-    }
+    } 
   }
 };
 
