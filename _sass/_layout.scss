@@ -22,14 +22,8 @@
 }
 
 // 归档
-
 .archive-item {
   border-bottom: 1px dashed grey;
-  
-  & a:hover {
-    text-decoration: none;
-    color: #1A802E;
-  }
 }
 
 .archive-date {
@@ -70,8 +64,6 @@
     color: #999;
     padding: .5rem;
     text-decoration: none;
-    border-radius: var(--border-radius);
-    background-color: rgba($color: #F7F7F7, $alpha: 0.5);
     
     &:hover {
       color: #333;
@@ -92,11 +84,11 @@
     color: #999;
     padding: .8rem;
     text-decoration: none;
-    border-radius: var(--border-radius);
-    background-color: rgba($color: #F7F7F7, $alpha: 0.5);
+    border-radius: 50%;
     
     &:hover {
       color: #333;
+      background-color: var(--gray-400);
     }
   }
 }
@@ -200,9 +192,4 @@
   text-align: center;
   font-size: .8rem;
   min-height: 4rem;
-  & span {
-    padding: .5rem 1rem;
-    border-radius: var(--border-radius);
-    background-color: rgba($color: #F7F7F7, $alpha: 0.5);
-  }
 }

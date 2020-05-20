@@ -17,30 +17,4 @@
     padding: .25rem .5rem;
     border-bottom: 1px dashed black;
   }
-  
-  & a {
-    color: darkmagenta;
-    &:hover {
-      text-decoration: none;
-      color: black;
-    }
-  }
-}
-
-.tips {
-  margin-top: 4rem;
-  text-align: center;
-  & a {
-    margin: .5rem;
-    padding: .8rem;
-    color: darkmagenta;
-    border-radius: var(--border-radius);
-    background-color: rgba($color: #fff, $alpha: 0.5); 
-    
-    &:hover {
-      text-decoration: none;
-      color: white;
-      background-color: rgba($color: #000, $alpha: 0.5); 
-    }
-  }
 }
