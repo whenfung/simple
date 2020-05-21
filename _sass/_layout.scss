@@ -5,33 +5,13 @@
 // 内容部分
 .container {
   max-width: 38rem;
-  min-height: calc(100vh - 12rem);  // 内容撑大，使底部固定
+  min-height: calc(100vh - 13rem);  // 内容撑大，使底部固定
   margin: 0 auto;    // 居中
   padding: 0 1rem;   // 左右内边距设置
   background-color: var(--container-bg);
 }
 
-// 导航栏布局
-.nav { 
-  color: #999;
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  min-height: 4rem;      // 底部固定效果
-  
-  & a {
-    color: #999;
-    padding: .5rem;
-    text-decoration: none;
-    border: 1px solid var(--gray-300);
-    background-color: white;
-    
-    &:hover {
-      color: #333;
-      border-bottom: .2rem solid grey;
-    }
-  }
-}
+
 
 // 页脚布局
 .footer {
