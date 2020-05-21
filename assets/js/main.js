@@ -43,7 +43,7 @@ function toScroll() {
   }, 10)  // 每 10 毫秒调用一次，这样绝对顺滑
 };
 
-// 导航栏回车触发弹出框
+// 导航栏中的搜索框回车触发弹出框
 document.querySelector('#nav-search-input').addEventListener('keyup', function(e) {
   if(e.keyCode == 13){
     if(this.value.trim() != '') {  // 删除头尾空格
@@ -54,6 +54,8 @@ document.querySelector('#nav-search-input').addEventListener('keyup', function(e
       oMask.style.height = '100%';
       document.body.appendChild(oMask);
       document.body.style.overflow = 'hidden';  //禁止滚动
+      
+      
       
       document.querySelector('#mask').addEventListener('click', function(e) {
         document.body.removeChild(oMask);
