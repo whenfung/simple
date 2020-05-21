@@ -23,6 +23,8 @@
     color: #999;
     padding: .5rem;
     text-decoration: none;
+    border: 1px solid var(--gray-300);
+    background-color: white;
     
     &:hover {
       color: #333;
