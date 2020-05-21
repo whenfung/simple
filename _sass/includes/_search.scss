@@ -2,21 +2,13 @@
   margin: 0 auto;
 }
 
-#search-input {
-  outline: none;
-  padding: .5rem 1rem;
-  width: 100%;
-  border: 2px solid #dfe2e5;
-}
-
 #results-container {
   list-style: none;
   padding-left: 0;
-  border-left: 2px solid #dfe2e5;
-  border-right: 2px solid #dfe2e5;
+  border: 2px solid #dfe2e5;
   
   & li {
     padding: .25rem .5rem;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px solid #dfe2e5;
   }
 }

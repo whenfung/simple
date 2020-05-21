@@ -47,7 +47,7 @@ function toScroll() {
 };
 
 // 导航栏中的搜索框回车触发弹出框
-document.querySelector('#nav-search-input').addEventListener('keyup', function(e) {
+document.querySelector('#search-input').addEventListener('keyup', function(e) {
   if(e.keyCode == 13){
     if(this.value.trim() != '') {  // 删除头尾空格
       location.href = '{{ site.baseurl }}/search.html?keyword=' + this.value;

@@ -7,29 +7,19 @@ document.addEventListener('DOMContentLoaded', function(){
   var keyword = decodeURI(getQuery('keyword'));  // 获取关键字
   
   // 获取搜索框和搜索数据
+   var input = document.querySelector('#search-input');
   var searchData;
-  var input = document.querySelector('#search-input');
   var result = document.querySelector('#results-container');
   var xhrSearch = new XMLHttpRequest();
   xhrSearch.open('GET', '{{ site.baseurl }}/search.json', true);
   xhrSearch.onreadystatechange = function() {
       if (xhrSearch.readyState == 4 && xhrSearch.status == 200) {
-        searchData = JSON.parse(xhrSearch.responseText);
-        if( keyword ) {
-          input.value = decodeURI(keyword);
-          search(decodeURI(keyword));
-        }
-        input.placeholder = "请输入关键词，回车搜索";
+        searchData = JSON.parse(xhrSearch.responseText);  // 解析数据
+        search(keyword);        // 对数据进行搜索
+        input.value = keyword;  // 保存输入的关键词
       }
   };
   xhrSearch.send(null);
-  
-  // 监听搜索框
-  document.querySelector('#search-input').addEventListener('keyup', function(e) {
-    if(e.keyCode == 13 && this.value.trim() != '') {  // 删除头尾空格
-      search(decodeURI(this.value));
-    }
-  });
   
   // 对所有数据进行匹配
   function search(keyword) {
