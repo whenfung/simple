@@ -39,6 +39,13 @@ img {
   border-radius: var(--border-radius);
 }
 
+// 语法糖
+.bigimg {
+  max-width: calc(100% + 2rem);
+  margin-left: -1rem;
+  border-radius: 0;
+}
+
 // 表格
 table {
   display: block;

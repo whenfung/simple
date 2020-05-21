@@ -3,7 +3,7 @@ layout: page
 title: 首页
 ---
 
-![simple]({{ site.cdn }}/home.jpg)
+<img src="{{ site.cdn }}/home.jpg" class = "bigimg" />
 
 这是一个简洁而不简单的 Jekyll 主题，我把它称为 SIMPLE。
 
