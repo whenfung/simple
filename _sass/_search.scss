@@ -2,20 +2,6 @@
   margin: 0 auto;
 }
 
-#search-close {
-  margin: .5rem auto;
-  padding: .5rem;
-  color: white;
-  background-color: var(--gray-500);
-  border-radius: var(--border-radius);
-  max-width: 10rem;
-  text-align: center;
-  
-  &:hover {
-    background-color: var(--gray-900);
-  }
-}
-
 #search-input {
   outline: none;
   padding: .5rem 1rem;

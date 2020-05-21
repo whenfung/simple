@@ -47,20 +47,7 @@ function toScroll() {
 document.querySelector('#nav-search-input').addEventListener('keyup', function(e) {
   if(e.keyCode == 13){
     if(this.value.trim() != '') {  // 删除头尾空格
-      //创建遮罩层节点
-      var oMask = document.createElement('div');
-      oMask.id = 'mask';
-      oMask.style.width = '100%';
-      oMask.style.height = '100%';
-      document.body.appendChild(oMask);
-      document.body.style.overflow = 'hidden';  //禁止滚动
-      
-      
-      
-      document.querySelector('#mask').addEventListener('click', function(e) {
-        document.body.removeChild(oMask);
-        document.body.style.overflow = 'auto';  // 允许滚动
-      });
+      alert("搜索功能还未开发成功，敬请期待");
     }
   }
 });

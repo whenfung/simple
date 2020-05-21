@@ -54,13 +54,4 @@
       background-color: var(--gray-600);
     }
   }
-} 
-
-#mask{ 
-  background: rgba($color: #000000, $alpha: 0.5);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
 }
