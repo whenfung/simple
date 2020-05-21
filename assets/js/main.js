@@ -1,3 +1,6 @@
+---
+# 需要 Liquid 预处理
+---
 // 检测滚动栏
 window.onscroll = function() {
   // 是否显示回到顶部按钮
@@ -47,7 +50,7 @@ function toScroll() {
 document.querySelector('#nav-search-input').addEventListener('keyup', function(e) {
   if(e.keyCode == 13){
     if(this.value.trim() != '') {  // 删除头尾空格
-      alert("搜索功能还未开发成功，敬请期待");
+      location.href = '{{ site.baseurl }}/search.html?keyword=' + this.value;
     }
   }
 });
