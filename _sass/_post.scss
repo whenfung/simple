@@ -64,8 +64,6 @@
 
 // 上下篇布局
 .prev-next {
-  display: flex;                  // 弹性布局
-  justify-content: space-between; // 两端对齐
   width: 100%;
   margin-bottom: 1rem;
   
@@ -85,12 +83,11 @@
 }
 
 .prev {
-  max-width: 50%;
+  width: 100%;
 }
 
 .next {
-  max-width: 50%;
-  text-align: right;
+  width: 100%;
 }
 
 #gitalk-container {
