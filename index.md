@@ -17,4 +17,6 @@ title: 首页
 
 当然江湖子女可以通过顶部的 “归档” 品读你的人生。
 
+可能你会问我为什么 SIMPLE 首页设计得如此简单？因为我认为每个人的首页风格都应该是个性化的，我应该把首页的设计权利交给你们。
+
 你想了解的主题细节都在 [存档]({{ site.baseurl }}/archives.html) 上，阅读 [搭建教程](https://professordeng.com/simple/2020/03/01/theme-settings.html) 快速开始吧。
