@@ -51,11 +51,13 @@ document.querySelector('#nav-search-input').addEventListener('keyup', function(e
       var oMask = document.createElement('div');
       oMask.id = 'mask';
       oMask.style.width = '100%';
-      oMask.style.height = document.documentElement.scrollWidth + 'px';
+      oMask.style.height = '100%';
       document.body.appendChild(oMask);
+      document.body.style.overflow = 'hidden';  //禁止滚动
       
       document.querySelector('#mask').addEventListener('click', function(e) {
         document.body.removeChild(oMask);
+        document.body.style.overflow = 'auto';  // 允许滚动
       });
     }
   }
