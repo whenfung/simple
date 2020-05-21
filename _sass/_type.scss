@@ -50,12 +50,42 @@ hr {
 blockquote {
   margin: .8rem 0;            // 上下外边距
   padding: .5rem 1rem;        // 上下、左右内边距
-  color: var(--gray-500);   // 字色
-  border-left: .25rem solid var(--border-color);  // 左边框色
+  color: var(--gray-600);   // 字色
+  border-left: .25rem solid var(--gray-600);  // 左边框色
   
   p:last-child {
     margin-bottom: 0;
   }
+}
+
+.success {
+  padding: .5rem 1rem;        // 上下、左右内边距
+  color: var(--gray-700);   // 字色
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  
+  border-left: .25rem solid #49a75f;  // 左边框色
+  background-color: #e2f0e5;
+}
+
+.warning {
+  padding: .5rem 1rem;        // 上下、左右内边距
+  color: var(--gray-700);   // 字色
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  
+  border-left: .25rem solid #c2a442;  // 左边框色
+  background-color: #faf4e0;
+}
+
+.wrong {
+  padding: .5rem 1rem;        // 上下、左右内边距
+  color: var(--gray-700);   // 字色
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  
+  border-left: .25rem solid #e45460;  // 左边框色
+  background-color: #fae7e8;
 }
 
 code,
