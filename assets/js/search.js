@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     }
     if(html === '') {
-      html += '<li>无相关结果，<a href="{{ site.baseurl }}/index.html">去首页找找？</a></li>';
+      html += '<li>无相关结果，<a href="{{ site.baseurl }}/archives.html">去归档找找？</a></li>';
     }
     result.innerHTML = html;
   };
