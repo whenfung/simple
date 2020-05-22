@@ -5,7 +5,7 @@
 // 内容部分
 .container {
   max-width: 38rem;
-  min-height: calc(100vh - 13rem);  // 内容撑大，使底部固定
+  min-height: calc(100vh - 9rem);  // 内容撑大，使底部固定
   margin: 0 auto;    // 居中
   padding: 0 1rem;   // 左右内边距设置
   background-color: var(--container-bg);

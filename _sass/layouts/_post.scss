@@ -30,7 +30,7 @@
   right: 0;
    
   width: calc(50vw - 19.5rem);      // 宽度是左侧所有空闲部分
-  max-height: calc(100vh - 8rem); // 高度除去导航栏和页脚 
+  max-height: calc(100vh - 9rem); // 高度除去导航栏和页脚 
   @media (min-width: 60rem) {
     display: inline-block;
   }
