@@ -23,12 +23,13 @@
   display: none;
   list-style: none;
   position: fixed;
-  padding-left: .5rem;
+  padding-left: 0;
+  border-left: 1px solid var(--gray-500);
  
-  top: 4rem;
+  top: 5rem;
   right: 0;
    
-  width: calc(50vw - 19rem);      // 宽度是左侧所有空闲部分
+  width: calc(50vw - 19.5rem);      // 宽度是左侧所有空闲部分
   max-height: calc(100vh - 8rem); // 高度除去导航栏和页脚 
   @media (min-width: 60rem) {
     display: inline-block;

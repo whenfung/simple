@@ -6,10 +6,10 @@
   
   margin: 0rem auto;   // 整体居中
   max-width: 38rem;    // 最大宽度
-  min-height: 4rem;
+  min-height: 5rem;
   
   padding-top: 1rem;   
-  padding-bottom: 1rem;
+  padding-bottom: .9rem;
   
   @media (min-width: 38rem) {
     flex-direction: row-reverse;
