@@ -39,7 +39,7 @@
   bottom: 2rem;       // 和底部距离
   right: 1rem;        // 和右边框距离
   position: fixed;    // 回滚键固定
-  z-index: 1;        // 在所有页面上方
+  z-index: 99;        // 在所有页面上方
   
   border-radius: 50%;
   background-color: #dfe2e5;

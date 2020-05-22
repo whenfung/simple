@@ -5,9 +5,10 @@
 // 页面加载后开始执行
 document.addEventListener('DOMContentLoaded', function(){
   var keyword = decodeURI(getQuery('keyword'));  // 获取关键字
+  console.log(keyword);
   
   // 获取搜索框和搜索数据
-   var input = document.querySelector('#search-input');
+  var input = document.querySelector('#search-input');
   var searchData;
   var result = document.querySelector('#results-container');
   var xhrSearch = new XMLHttpRequest();
@@ -15,8 +16,10 @@ document.addEventListener('DOMContentLoaded', function(){
   xhrSearch.onreadystatechange = function() {
       if (xhrSearch.readyState == 4 && xhrSearch.status == 200) {
         searchData = JSON.parse(xhrSearch.responseText);  // 解析数据
-        search(keyword);        // 对数据进行搜索
-        input.value = keyword;  // 保存输入的关键词
+        if(keyword) {
+          search(keyword);        // 对数据进行搜索
+          input.value = keyword;  // 保存输入的关键词
+        }
       }
   };
   xhrSearch.send(null);
@@ -49,5 +52,5 @@ function getQuery(variable) {  // 获取 URL 中的关键字
       var pair = vars[i].split("=");
       if(pair[0] == variable){return pair[1];}
   }
-  return(false);
+  return('');   // 返回空
 }
