@@ -4,7 +4,7 @@ layout: default
 
 <div class="page">
   {% if page.img %}
-    <img src="{{ site.cdn }}/{{ page.img }}" class = "bigimg" />
+    <img src="{{ site.cdn }}/{{ page.img }}" class = "bigimg" onclick="window.open(this.src,'_blank')" />
   {% endif %}
   <h1 class="page-title">{{ page.title }}</h1>
   
