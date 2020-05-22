@@ -19,12 +19,11 @@
 // 目录布局
 
 #markdown-toc {
-  font-size: 16px;
   display: none;
+  font-size: 16px;
   list-style: none;
   position: fixed;
   padding-left: 0;
-  border-left: 1px solid var(--gray-500);
  
   top: 5rem;
   right: 0;
@@ -40,7 +39,6 @@
     padding-left: .5rem;
     font-size: 1rem;
     font-weight: bold;
-    border-left: .25rem solid var(--gray-700);
   }
   
   & ol {
