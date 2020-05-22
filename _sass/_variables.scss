@@ -56,7 +56,7 @@
   --spacer-3: calc(var(--spacer) * 3);
 }
 
-@media (min-width: 38rem) {
+@media (min-width: 760px) {  // 这里不能用 rem 做比较单位，不然会出现临界错误
   :root {
     --font-size: 20px;    // 大屏幕
   }
