@@ -6,7 +6,7 @@ title: 归档
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y' " %}
 {% for group in posts_by_year %}
 
-<h3>{{ group.name }}</h3>
+<h3 class="archives-title">{{ group.name }} 年（共 {{ group.items | size }} 篇文章）</h3>
   <ul class="archives">
     {% for post in group.items reversed %}
       <li class="archive-item">

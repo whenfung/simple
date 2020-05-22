@@ -1,4 +1,11 @@
 // 归档
+
+.archives-title {
+  text-align: center;
+  border-radius: 1rem;
+  background-color: var(--gray-300);
+}
+
 .archive-item {
   border-bottom: 1px dashed grey;
 }
