@@ -55,6 +55,10 @@
       border-bottom: .25rem solid var(--gray-600);
     }
   }
+  
+  @media (min-width: 38rem) {
+    margin-left: .5rem;
+  }
 }
 
 .navactive {
