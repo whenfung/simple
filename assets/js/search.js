@@ -5,7 +5,6 @@
 // 页面加载后开始执行
 document.addEventListener('DOMContentLoaded', function(){
   var keyword = decodeURI(getQuery('keyword'));  // 获取关键字
-  console.log(keyword);
   
   // 获取搜索框和搜索数据
   var input = document.querySelector('#search-input');
