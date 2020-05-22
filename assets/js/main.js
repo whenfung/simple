@@ -54,3 +54,10 @@ document.querySelector('#search-input').addEventListener('keyup', function(e) {
     }
   }
 });
+
+var imgs = document.getElementsByClassName('bigimg');
+for(var i = 0; i < imgs.length; i++) {
+  imgs[i].addEventListener('click', function(){
+    window.open(this.src,'_blank');
+  })
+}
