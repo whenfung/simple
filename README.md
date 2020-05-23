@@ -1,20 +1,20 @@
 # simple
 
-[simple](https://professordeng.com/simple) 是针对移动端开发的响应式 Jekyll 主题，觉得不错的给个 star。
+这是针对移动端开发的响应式 Jekyll 主题，觉得不错点个 star。
 
 主题特性包括但不限于：
 
 1. 在线编辑、新建、发布文章
-2. 使用 Markdown 写文章（GitHub 官方语法）
-3. 使用 LaTex 语法编辑公式（MathJax 库支持）
-4. 使用流程图（mermaid 库支持）
-5. 在文章中嵌入 B 站、Youtube 视频
-6. 评论系统（gitalk 支持）
+2. GitHub 官方语法写作
+3. MathJax 支持属性公式渲染
+4. mermaid 提供流程图渲染
+5. 支持 B 站、YouTube 视频嵌入
+6. Gitalk 提供评论支持
 8. 原生 JS 实现站内搜索
 
 ## 快速搭建
 
-你可以选择直接在 github 上操作，或者在本地上修改主题再发布到自己的仓库里。
+你可以选择直接在 GitHub 上操作，或者在本地上修改主题再发布到自己的仓库里。
 
 ### 线上操作
 
