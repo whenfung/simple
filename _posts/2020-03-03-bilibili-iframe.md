@@ -2,7 +2,7 @@
 title: 如何嵌入 B 站视频
 ---
 
-B 站支持 iframe 视频嵌入，样例如下：
+B 站支持 iframe 视频嵌入，因此本主题实现了 B 站视频嵌入，样例如下
 
 <iframe src="//player.bilibili.com/player.html?bvid=BV1ps411U7xc&page=1&high_quality=1&danmaku=0" allowfullscreen></iframe>
 

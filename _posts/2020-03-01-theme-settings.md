@@ -2,7 +2,7 @@
 title: 如何使用 simple 主题
 ---
 
-[simple](https://professordeng.com/simple) 是针对移动端开发的响应式 Jekyll 主题，兼具云笔记和博客功能，特性包括但不限于：
+Simple 是针对移动端开发的响应式 Jekyll 主题，兼具云笔记和博客功能，特性包括但不限于
 
 1. 在线编辑、新建、发布文章[^1]
 2. 支持 GitHub 官方 markdown 语法[^2]

@@ -2,7 +2,7 @@
 title: 如何给长文章添加目录
 ---
 
-Jekyll 默认用 kramdown 作为 markdown 渲染器[^1]，生成的列表可以通过谷歌浏览器中查看，用 `#markdown-toc` 标识。
+Jekyll 默认用 kramdown 作为 markdown 渲染器，生成用 `#markdown-toc` 标识的 HTML 目录块。
 
 1. 目录
 {:toc}

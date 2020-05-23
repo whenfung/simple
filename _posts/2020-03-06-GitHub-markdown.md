@@ -2,9 +2,9 @@
 title: GitHub 的 markdown 语法
 ---
 
-主题提供了完全兼容 GitHub 的 markdown 语法，因此你使用 [GitHub Markdown](https://guides.github.com/features/mastering-markdown/)。
+主题提供了完全兼容 GitHub 的 markdown 语法，你可以使用 GitHub 原生语法在本主题上写作。
 
-本主题默认 markdown 渲染器是 [kramdown](https://kramdown.gettalong.org/)
+本主题默认 markdown 渲染器是 [kramdown](https://kramdown.gettalong.org/)，在本主题的渲染效果如下
 
 1. 目录
 {:toc}
