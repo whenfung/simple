@@ -8,7 +8,7 @@ title: 归档
 
 <h3 class="archives-title">{{ group.name }} 年（共 {{ group.items | size }} 篇文章）</h3>
   <ul class="archives">
-    {% for post in group.items reversed %}
+    {% for post in group.items %}
       <li class="archive-item">
         <div class="archive-date">{{ post.date | date: "%m-%d" }}</div>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
