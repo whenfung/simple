@@ -12,14 +12,13 @@
 
 .post-title {
   padding-top: 1rem;
-  text-align: center;
 }
 
-.post-date {
+.post-meta {
   display: block;
-  text-align: center;
   font-size: .75rem;
-  color: #adb5bd;
+  color: var(--gray-600);
+  border-bottom: 1px solid var(--gray-400);
   margin-bottom: 1rem;
 }
 

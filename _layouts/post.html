@@ -7,7 +7,9 @@ layout: default
     <img src="{{ site.cdn }}/{{ page.img }}" class = "bigimg" />
   {% endif %}
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date: '%B %d, %Y' }} . 本文共 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字</span>
+  <span class="post-meta">{{ page.date | date: '%Y-%m-%d' }} · 本文共 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字 · 
+  <a href="https://github.com/professordeng/simple/edit/gh-pages/{{ page.path }}">编辑</a>
+  </span>
   
   {{ content }}
   
