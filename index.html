@@ -8,7 +8,8 @@ title: 首页
   <h2 class="posts-item-title">
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
   </h2>
-  <p> {{ post.excerpt | strip_html }} <a href="{{ post.url | relative_url }}">Read more</a> </p>
+  <p> {{ post.excerpt | strip_html }} <a href="{{ post.url | relative_url }}">Read more...</a> </p>
+  <span class="posts-item-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} </span>
 </div>
 {% endfor %}
 

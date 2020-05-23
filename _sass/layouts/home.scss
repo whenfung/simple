@@ -1,8 +1,18 @@
 .posts-item {
   padding: .5rem 1rem;
   margin-bottom: 1rem;
-  border-radius: var(--border-radius);
   background-color: white;
+  
+  @media (min-width: 38rem) {
+    border-radius: var(--border-radius);
+  }
+}
+
+.posts-item-date {
+  display: block;
+  text-align: right;
+  color: var(--gray-600);
+  font-size: .9rem;
 }
 
 // 上下篇布局

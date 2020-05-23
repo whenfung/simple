@@ -2,10 +2,10 @@
 title: 如何给长文章添加目录
 ---
 
+Jekyll 默认用 kramdown 作为 markdown 渲染器[^1]，生成的列表可以通过谷歌浏览器中查看，用 `#markdown-toc` 标识。
+
 1. 目录
 {:toc}
-
-Jekyll 默认用 kramdown 作为 markdown 渲染器[^1]，生成的列表可以通过谷歌浏览器中查看，用 `#markdown-toc` 标识。
 
 想要在文章有目录，在文章任意地方插入下方语句即可。
 
