@@ -66,16 +66,16 @@
 
 // 上下篇布局
 .prev-next {
-  width: 100%;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
   
   & a {
     display: block;
-    font-size: .9rem;
-    border: 1px solid #dfe2e5;
-    color: #999;
+    color: var(--gray-600);
     padding: .25rem .5rem;
     text-decoration: none;
+    background-color: white;
     
     &:hover {
       color: #dfe2e5;
@@ -84,14 +84,10 @@
   }
 }
 
-.prev {
-  width: 100%;
-}
-
-.next {
-  width: 100%;
-}
-
 #gitalk-container {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-bottom: 1rem;
+  background-color: white;
 }
