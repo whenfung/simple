@@ -29,6 +29,10 @@ plugins:
   - jemoji
   - jekyll-avatar
   - jekyll-mentions
+  - jekyll-paginate
+
+# 每页 5 篇文章
+paginate: 5
 
 # 评论系统（本主题使用 gitalk）
 ## Docs: https://github.com/gitalk/gitalk/blob/master/readme-cn.md

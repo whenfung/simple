@@ -1,0 +1,26 @@
+.posts-item {
+  padding: .5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  background-color: white;
+}
+
+// 上下篇布局
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  
+  & a {
+    display: block;
+    color: var(--gray-600);
+    padding: .25rem .5rem;
+    text-decoration: none;
+    background-color: white;
+    
+    &:hover {
+      color: #dfe2e5;
+      background-color: #333;
+    }
+  }
+}

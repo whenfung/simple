@@ -1,0 +1,28 @@
+---
+layout: default
+title: 首页
+---
+
+{% for post in paginator.posts %}
+<div class="posts-item">
+  <h2 class="posts-item-title">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </h2>
+  <p> {{ post.excerpt | strip_html }} <a href="{{ post.url | relative_url }}">Read more</a> </p>
+</div>
+{% endfor %}
+
+<div class="pagination">
+  <div class="prev">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">上一页</a>
+  {% endif %}
+  </div>
+  
+  <div class="next">
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">下一页</a>
+  {% endif %}
+  </div>
+</div>
+
