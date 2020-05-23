@@ -33,4 +33,16 @@
       background-color: #333;
     }
   }
+  
+  & .prev {
+    width: 4rem;
+  }
+  
+  & .tips {
+    padding: .25rem .5rem;
+  }
+  
+  & .next {
+    width: 4rem;
+  }
 }

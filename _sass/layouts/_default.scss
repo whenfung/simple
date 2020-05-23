@@ -40,7 +40,7 @@
   z-index: 99;        // 在所有页面上方
   
   border-radius: 50%;
-  background-color: #dfe2e5;
+  background-color: var(--gray-400);
   
   @media (min-width: 60rem) {
     bottom: 1rem;
