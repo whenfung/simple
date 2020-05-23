@@ -11,20 +11,19 @@
 
 // 页脚布局
 .footer {
-  color: #999;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
   min-height: 4rem;      // 底部固定效果
   
   & a {
-    color: #999;
+    color: var(--gray-600);
     padding: .8rem;
     text-decoration: none;
     border-radius: 50%;
     
     &:hover {
-      color: #333;
+      color: var(--gray-900);
       background-color: var(--gray-400);
     }
   }
