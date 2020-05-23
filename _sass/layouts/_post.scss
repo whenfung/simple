@@ -1,5 +1,7 @@
 // 文章内容布局
 .post {
+  padding: 0 1rem;   // 左右内边距设置
+  background-color: var(--container-bg);
   padding-bottom: 1rem;
 }
 
