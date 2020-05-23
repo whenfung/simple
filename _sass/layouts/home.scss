@@ -5,6 +5,12 @@
   
   @media (min-width: 38rem) {
     border-radius: var(--border-radius);
+    box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
+  }
+  
+  &:hover {
+    transform: translate(0px, -2px);
+    box-shadow: 0 15px 45px -10px rgba(10, 16, 34, .2);
   }
 }
 
@@ -31,6 +37,11 @@
     &:hover {
       color: #dfe2e5;
       background-color: #333;
+    }
+    
+    @media (min-width: 38rem) {
+      border-radius: var(--border-radius);
+      box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
     }
   }
   
