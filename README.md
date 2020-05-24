@@ -1,42 +1,48 @@
-# simple
+# <p align="center"> simple -- A Simple Jekyll Theme </p>
 
-这是针对移动端开发的响应式 Jekyll 主题，觉得不错点个 star。
+<p align="center">English |  <a href="README_cn.md">中文</a> | <a href="https://professordeng.com/simple">demo</a></p>
 
-主题特性包括但不限于：
+## Features
 
-1. 在线编辑、新建、发布文章
-2. GitHub 官方语法写作
-3. MathJax 支持属性公式渲染
-4. mermaid 提供流程图渲染
-5. 支持 B 站、YouTube 视频嵌入
-6. Gitalk 提供评论支持
-8. 原生 JS 实现站内搜索
+This is a responsive Jekyll theme, and it's mobile-friendly. If you enjoy it, just star this repo.
 
-## 快速搭建
+Theme features include but are not limited to:
 
-你可以选择直接在 GitHub 上操作，或者在本地上修改主题再发布到自己的仓库里。
+* Editing, creating and publishing articles online
+* Using GitHub Flavored Markdown (*GFM*)
+* Formula rendering supported by MathJax
+* Flowchart rendering supported by Mermaid
+* By default, keep the iframe aspect ratio at 16:9 to better embed iframes like YouTube, Bilibili, etc
+* Comments supported by Gitalk
+* Using native JavaScript syntax impletments search functionality
 
-### 线上操作
+## Getting started
 
-1. fork 本仓库
-2. 修改仓库名为 `username.github.io`，创建 `master` 分支并设置为默认分支。
-3. 修改 `_config.yml` 文件中的相应个人信息。
+You can just operate it directly on GitHub, or edit it locally and push it back to your own remote repository.
 
-浏览器访问 `https://username.github.io` 查看新网站。
+### Online Preview
 
-### 本地运行
+1. Fork the repo
+2. Rename forked repository as `username.github.io`; create the` master` branch and set it as the default branch
+3. Modify the corresponding configuration of the theme in the `_config.yml` file
+4. Visit `https://username.github.io` via browser, see the website online
 
-1. 本地安装 Jekyll 
-2. clone 主题到本地
-3. 进入主题根目录后运行 `jekyll serve`
+### Local Preview
 
-浏览器中输入 `http://localhost:4000` 预览。
+1. Installing Jekyll locally
+2. Clone a copy of your fork on your local
+3. Enter the root directory and run `jekyll serve`
+4. Visit `http://localhost:4000` via browser to preview the website locally
 
-## 网站样式设置
+## Style Configuration
 
-可通过修改 `_sass/_variables.scss` 文件中的 CSS 变量改变主题样式，包括但不限于
+Theme styles can be changed by modifying CSS variables in the `_sass/_variables.scss` file, including but not limited to:
 
-1. 通过 `--font` 修改字体
-2. 通过 `--body-bg` 修改网页背景的颜色
-3. 通过 `--heading-color` 修改标题的颜色
-5. 通过 `--link-color` 修改链接的颜色
+* Use `--font` to change the font
+* Use `--body-bg` to change the background color of the website
+* Use `--heading-color` to change the color of the heading
+* Use `--link-color` to change the color of the hyperlink
+
+## Star trending
+
+[![Stargazers over time](https://starchart.cc/professordeng/simple.svg)](https://starchart.cc/professordeng/simple)
