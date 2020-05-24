@@ -8,7 +8,7 @@ title: 首页
   <h2 class="posts-item-title">
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
   </h2>
-  <p> {{ post.excerpt }} <a href="{{ post.url | relative_url }}">阅读全文</a> </p>
+  <p> {{ post.excerpt }} <a href="{{ post.url | relative_url }}">{{ site.settings.data.read_more }}</a> </p>
   <span class="posts-item-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} </span>
 </div>
 {% endfor %}
@@ -16,7 +16,7 @@ title: 首页
 <div class="pagination">
   <div class="prev">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">上一页</a>
+    <a href="{{ paginator.previous_page_path | relative_url }}">{{ site.data.settings.prev_page }}</a>
   {% endif %}
   </div>
   
@@ -26,7 +26,7 @@ title: 首页
   
   <div class="next">
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">下一页</a>
+    <a href="{{ paginator.next_page_path | relative_url }}">{{ site.data.settings.next_page }}</a>
   {% endif %}
   </div>
 </div>

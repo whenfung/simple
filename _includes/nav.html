@@ -1,12 +1,12 @@
 <nav class="nav">
   <div class="nav-search">
-    <input type="text" placeholder="输入关键词，回车搜索" id="search-input" />
+    <input type="text" placeholder="{{ site.data.settings.search_tip }}" id="search-input" />
   </div>
   
   <div class="nav-links">
     {% for item in site.data.settings.nav %}
     <a href="{{ item.url | relative_url }}" {% if page.title == item.name %} class="navactive" {% endif %} >{{ item.name }}</a>
     {% endfor %}
-    <a href="https://github.com/professordeng/simple/new/gh-pages/_post">新建</a>
+    <a href="https://github.com/professordeng/simple/new/gh-pages/_post">{{ site.data.settings.new }}</a>
   </div>
 </nav>

@@ -8,7 +8,7 @@ layout: default
   {% endif %}
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-meta">{{ page.date | date: '%Y-%m-%d' }} · 本文共 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字 · 
-  <a href="https://github.com/professordeng/simple/edit/gh-pages/{{ page.path }}">编辑</a>
+  <a href="https://github.com/professordeng/simple/edit/gh-pages/{{ page.path }}">{{ site.data.settings.edit }}</a>
   </span>
   
   {{ content }}
@@ -18,13 +18,13 @@ layout: default
 <div class="prev-next">
   <div class="prev">
   {% if page.previous %}
-    <a href="{{ page.previous.url | relative_url }}">上一篇</a>
+    <a href="{{ page.previous.url | relative_url }}">{{ site.data.settings.prev }}</a>
   {% endif %}
   </div>
   
   <div class="next">
   {% if page.next %}
-    <a href="{{ page.next.url | relative_url }}">下一篇</a>
+    <a href="{{ page.next.url | relative_url }}">{{ site.data.settings.next }}</a>
   {% endif %}
   </div>
 </div>

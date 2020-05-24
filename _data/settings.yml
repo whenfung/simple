@@ -19,3 +19,19 @@ social:
   link: https://zhihu.com/people/professordeng
 - icon: false    # linkedin
   link: https://linkedin.com/in/professordeng
+  
+# Customize site text
+prev: 上一篇
+next: 下一篇
+
+prev_page: 上一页
+next_page: 下一页
+
+search_tip: 输入关键词，回车搜索
+searching: 正在搜索中
+
+new: 新建
+
+read_more: 阅读全文
+
+edit: 编辑
