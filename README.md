@@ -1,6 +1,6 @@
 # <p align="center"> simple -- A Simple Jekyll Theme </p>
 
-<p align="center">English |  <a title="中文" href="README_cn.md">中文</a></p>
+<p align="center">English |  <a href="README_cn.md">中文</a> | <a href="https://professordeng.com/simple">demo</a></p>
 
 ## Features
 
