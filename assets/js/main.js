@@ -1,5 +1,5 @@
 ---
-# 需要 Liquid 预处理
+# Liquid pretreatment required
 ---
 // 检测滚动栏
 window.onscroll = function() {

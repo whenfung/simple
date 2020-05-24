@@ -1,19 +1,17 @@
-# URL
-title: SIMPLE                        # 站点名
-description: A Jekyll Theme          # 站点描述
-url: https://professordeng.com       # 域名
-baseurl: /simple                     # 根目录
+title: SIMPLE                        # title of the site
+description: A Jekyll Theme          # description of the site
+url: https://professordeng.com       # domain
+baseurl: /simple                     # root directory
 
-# email address
+# Email address
 email: professordeng@qq.com
 
-# 站点资源
-img: /simple/assets/img          # 图片库
-css: /simple/assets/css          # CSS 样式库
-js:  /simple/assets/js           # js 库
-cdn: https://cdn.jsdelivr.net/gh/professordeng/simple@gh-pages/assets/img # CDN 加速
+# Path of site resources
+img: /simple/assets/img 
+css: /simple/assets/css  
+js:  /simple/assets/js  
+cdn: https://cdn.jsdelivr.net/gh/professordeng/simple@gh-pages/assets/img
 
-# Jekyll 插件
 ## Docs: https://pages.github.com/versions/
 plugins:
   - jekyll-feed
@@ -24,11 +22,11 @@ plugins:
   - jekyll-mentions
   - jekyll-paginate
 
-# 每页 5 篇文章
+# paginate setting
 paginate: 5
 
-# 评论系统（本主题使用 gitalk）
-## Docs: https://github.com/gitalk/gitalk/blob/master/readme-cn.md
+# Comment system
+## Docs: https://github.com/gitalk/gitalk/blob/master/readme.md
 gitalk:
   enable: true 
   clientID: 6e42adfac0bf61e180f6
@@ -36,8 +34,8 @@ gitalk:
   repo: simple
   owner: professordeng
   admin: professordeng
-  id: simple      # 默认是 location.pathname
-  title: simple   # issue 标题
+  id: simple      # The default is location.pathname
+  title: simple   # Issue title
   body: simple
   
 
@@ -45,7 +43,7 @@ gitalk:
 ## Docs: https://analytics.google.com/analytics/web/
 google-analytics: UA-165708741-1
 
-# 默认 _post 文件夹用 post 布局
+# default layout of the articles in _post
 defaults:
   - scope:
       path: ""

@@ -1,6 +1,4 @@
-// 排版
-//
-// 标题, 段落, 列表和一些文章可能出现的元素
+// Typography
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
@@ -48,87 +46,86 @@ hr {
 }
 
 blockquote {
-  margin: .8rem 0;            // 上下外边距
-  padding: .5rem 1rem;        // 上下、左右内边距
-  color: var(--gray-600);   // 字色
-  border-left: .25rem solid var(--gray-600);  // 左边框色
+  margin: .8rem 0;    
+  padding: .5rem 1rem;   
+  color: var(--gray-600); 
+  border-left: .25rem solid var(--gray-600); 
   
   p:last-child {
     margin-bottom: 0;
   }
 }
 
+// Prompt box: success / warning / wrong
 .success {
-  padding: .5rem 1rem;        // 上下、左右内边距
-  color: var(--gray-700);   // 字色
+  padding: .5rem 1rem;   
+  color: var(--gray-700); 
   border-radius: var(--border-radius);
   margin-bottom: 1rem;
   
-  border-left: .25rem solid #49a75f;  // 左边框色
+  border-left: .25rem solid #49a75f; 
   background-color: #e2f0e5;
 }
 
 .warning {
-  padding: .5rem 1rem;        // 上下、左右内边距
-  color: var(--gray-700);   // 字色
+  padding: .5rem 1rem;  
+  color: var(--gray-700);   
   border-radius: var(--border-radius);
   margin-bottom: 1rem;
   
-  border-left: .25rem solid #c2a442;  // 左边框色
+  border-left: .25rem solid #c2a442;  
   background-color: #faf4e0;
 }
 
 .wrong {
-  padding: .5rem 1rem;        // 上下、左右内边距
-  color: var(--gray-700);   // 字色
+  padding: .5rem 1rem;  
+  color: var(--gray-700); 
   border-radius: var(--border-radius);
   margin-bottom: 1rem;
   
-  border-left: .25rem solid #e45460;  // 左边框色
+  border-left: .25rem solid #e45460; 
   background-color: #fae7e8;
 }
 
 code,
 pre {
-  font-family: var(--code-font);          // 代码字体
-  font-size: var(--code-font-size);       // 代码字号
-  background-color: var(--code-bg);       // 代码背景色
+  font-family: var(--code-font);     
+  font-size: var(--code-font-size);  
+  background-color: var(--code-bg); 
 }
 
 code {
   padding: .2rem .4rem;
-  color: var(--code-color);                  // 代码颜色
-  border-radius: 3px;  // 圆角边框
+  color: var(--code-color);    
+  border-radius: 3px; 
 }
 
-// 代码段格式设置
+// Code snippet
 pre {
   display: block;
   width: 100%;
-  line-height: 1.4;         // 代码行高
+  line-height: 1.4;  
   margin-top: 0;
   margin-bottom: 1rem;
   padding: .8rem .5rem;
   
-  &.highlight {  // 代码水平滚动
+  &.highlight {  // Scroll horizontally
     overflow-x: auto;
   }
 }
 
-pre code {   // 去除 pre 中 code 的格式
+// Remove the format of code in pre
+pre code {  
   padding: 0;
   font-size: 100%;
   color: inherit;
   background-color: transparent;
 }
 
-// 脚注
-
 .footnotes p {
   margin-bottom: 0;
 }
 
-// 多媒体支持
 video {
   width: calc(100% + 2rem);
   margin-left: -1rem;
@@ -139,11 +136,11 @@ video {
   }
 }
 
-// B 站视频嵌入, 保证 16:9 比例
+// iframe video ratio is 16: 9
 iframe {
   margin-bottom: 1rem;
-  overflow: none;      // 去除滚动框
-  border: 0;           // 去除嵌入边框
+  overflow: none;      // Remove scroll box
+  border: 0;           // Remove embedded border
   
   width: 100vw;
   height: 56.25vw;
@@ -156,13 +153,13 @@ iframe {
   }
 }
 
-// 数学公式水平滚动
+// Math formula scrolls horizontally
 .MJXc-display {
   overflow-x: auto;
   overflow-y: hidden;
 }
 
-// 渲染图适应
+// Rendered image scrolls horizontally
 .mermaid {
   overflow-x: auto;
   overflow-y: hidden;

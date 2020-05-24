@@ -1,27 +1,24 @@
-// border-box 表示 width 包括边框、内边距、内容
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   
-  -webkit-tap-highlight-color: rgba(0,0,0,0);   // 手机上不显示蓝色框
+  -webkit-tap-highlight-color: rgba(0,0,0,0);   // The blue box is not displayed on the phone
 }
 
-// 设置根元素的字体、字号、行高
+// root element settings
 html {
   font-family: var(--font);
   font-size: var(--font-size);
   line-height: var(--line-height);
 }
 
-// 设置整体的字色、背景色、背景图
+// content settings
 body {
   color: var(--gray-700);
   background-color: var(--body-bg);
 }
 
-// 设置链接的格式
 a {
   color: var(--link-color);
   text-decoration: none;
@@ -33,13 +30,12 @@ a {
   }
 }
 
-// 设置图片的格式
 img {
-  max-width: 100%;      // 最大宽度
+  max-width: 100%;
   border-radius: var(--border-radius);
 }
 
-// 语法糖
+// Click on the picture to enlarge through this class
 .bigimg {
   max-width: calc(100% + 2rem);
   margin-left: -1rem;
@@ -47,23 +43,23 @@ img {
   border-radius: 0;
 }
 
-// 表格
 table {
   display: block;
   overflow-x: auto;
   width: 100%;
   
-  border-collapse: collapse;      // 合并格子之间的线
+  border-collapse: collapse;
   margin-bottom: 1rem;
 }
 
-// 表格头和表格项
+// table header cells and standard cells 
 th, td {    
   border: 1px solid #dfe2e5;
   padding: .25rem .5rem;
   text-align: center;
 }
 
+// table row
 tr:hover {
   background-color: #dfe2e5;
 }

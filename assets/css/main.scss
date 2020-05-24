@@ -13,18 +13,15 @@
 // Designed, built, and released under MIT license by @professordeng. Learn more at
 // https://github.com/professordeng/simple.
 
-// 基本元素
 @import "variables";
 @import "base";
 @import "type";
 @import "syntax";
 @import "icons";
 
-// 模块
 @import "includes/nav";
 @import "includes/search";
 
-// 页面布局
 @import "layouts/default";
 @import "layouts/page";
 @import "layouts/post";

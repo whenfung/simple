@@ -1,6 +1,5 @@
-// 文章内容布局
 .post {
-  padding: 0 1rem;   // 左右内边距设置
+  padding: 0 1rem;
   background-color: var(--container-bg);
   padding-bottom: 1rem;
   
@@ -34,8 +33,8 @@
   top: 5rem;
   right: 0;
    
-  width: calc(50vw - 19.5rem);      // 宽度是左侧所有空闲部分
-  max-height: calc(100vh - 9rem); // 高度除去导航栏和页脚 
+  width: calc(50vw - 19.5rem);      // All free parts on the lefts
+  max-height: calc(100vh - 9rem);   // Remove navigation bar and footer
   @media (min-width: 60rem) {
     display: inline-block;
   }
@@ -54,21 +53,21 @@
   
   & li {
     max-width: 5rem;
-    white-space:nowrap;        /*不让文字内容换行*/
-    overflow:hidden;           /*文字溢出的部分隐藏起来*/
-    text-overflow:ellipsis;    /*用...替代溢出的部分*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     
     margin: 0 .5rem;
     padding-left: 0;
   }
 }
 
-.tocactive {  // 当前标题高亮为黑色
+// toc highlight
+.tocactive {
   font-weight: bold;
   color: black;
 }
 
-// 上下篇布局
 .prev-next {
   margin-top: 1rem;
   display: flex;

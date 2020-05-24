@@ -1,11 +1,10 @@
-// 导航栏布局
 .nav { 
   display: flex;
   flex-direction: column;
-  justify-content: center; // 中间
+  justify-content: center;
   
-  margin: 0rem auto;   // 整体居中
-  max-width: 38rem;    // 最大宽度
+  margin: 0rem auto;   // Center horizontally
+  max-width: 38rem;
   min-height: 5rem;
   
   padding-top: 2rem;   

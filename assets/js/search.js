@@ -1,5 +1,5 @@
 ---
-# 需要 Liquid 预处理
+# Liquid pretreatment required
 ---
 
 // 页面加载后开始执行

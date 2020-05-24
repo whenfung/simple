@@ -46,8 +46,8 @@
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
   
-  --code-font: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;  // 代码字体
-  --code-font-size: .9rem;       // 代码字号
+  --code-font: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace; 
+  --code-font-size: .9rem; 
   --code-bg: #f5f5f5; 
   --code-color: #bf616a;
   
@@ -56,8 +56,8 @@
   --spacer-3: calc(var(--spacer) * 3);
 }
 
-@media (min-width: 760px) {  // 这里不能用 rem 做比较单位，不然会出现临界错误
+@media (min-width: 760px) {  // The unit of min-width must be px
   :root {
-    --font-size: 20px;    // 大屏幕
+    --font-size: 20px; 
   }
 }

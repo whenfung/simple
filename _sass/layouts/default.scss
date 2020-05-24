@@ -2,19 +2,17 @@
 //
 // Styles for managing the structural hierarchy of the site.
 
-// 内容部分
 .container {
   max-width: 38rem;
-  min-height: calc(100vh - 9rem);  // 内容撑大，使底部固定
-  margin: 0 auto;    // 居中
+  min-height: calc(100vh - 9rem);  // fixed footer
+  margin: 0 auto;  // Center horizontally
 }
 
-// 页脚布局
 .footer {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  min-height: 4rem;      // 底部固定效果
+  min-height: 4rem; 
   
   & a {
     color: var(--gray-600);
@@ -29,15 +27,15 @@
   }
 }
 
-// 回到顶部按钮设计
+// back top button
 .top{
   display: none;
-  cursor: pointer;    // 选中时显示手指
+  cursor: pointer;
   padding: .5rem;
-  bottom: 2rem;       // 和底部距离
-  right: 1rem;        // 和右边框距离
-  position: fixed;    // 回滚键固定
-  z-index: 99;        // 在所有页面上方
+  bottom: 2rem; 
+  right: 1rem; 
+  position: fixed; 
+  z-index: 99; 
   
   border-radius: 50%;
   background-color: var(--gray-400);
