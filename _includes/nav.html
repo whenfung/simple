@@ -4,9 +4,9 @@
   </div>
   
   <div class="nav-links">
-    <a href="{{ site.baseurl }}/" {% if page.title == "首页"%} class="navactive" {% endif %} >首页</a>
-    <a href="{{ site.baseurl }}/archives.html" {% if page.title == "归档"%} class="navactive" {% endif %} >归档</a>
-    <a href="{{ site.baseurl }}/about.html" {% if page.title == "关于" %} class="navactive" {% endif %} >关于</a>
+    {% for item in site.data.lang.nav %}
+    <a href="{{ item.url | relative_url }}" {% if page.title == item.name %} class="navactive" {% endif %} >{{ item.name }}</a>
+    {% endfor %}
     <a href="https://github.com/professordeng/simple/new/gh-pages/_post">新建</a>
   </div>
 </nav>
