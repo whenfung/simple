@@ -1,0 +1,21 @@
+# Customize site navigation
+nav:
+- name: 首页
+  url: /
+- name: 归档
+  url: /archives.html
+- name: 关于
+  url: /about.html
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+social:
+- icon: github
+  link: https://github.com/professordeng
+- icon: false    # weibo
+  link: https://weibo.com/codeng
+- icon: telegram
+  link: https://t.me/jekyll_simple
+- icon: zhihu
+  link: https://zhihu.com/people/professordeng
+- icon: false    # linkedin
+  link: https://linkedin.com/in/professordeng

@@ -4,15 +4,8 @@ description: A Jekyll Theme          # 站点描述
 url: https://professordeng.com       # 域名
 baseurl: /simple                     # 根目录
 
-# 社交帐号
-## 会在页面底部显示，建议挑 4 个
-github: professordeng/simple
-weibo:
-telegram: jekyll_simple
-zhihu: professordeng
-linkedin:
-mail: professordeng@qq.com
-
+# email address
+email: professordeng@qq.com
 
 # 站点资源
 img: /simple/assets/img          # 图片库

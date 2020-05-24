@@ -1,26 +1,12 @@
 <footer class="footer">
-  {% if site.github %}
-  <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-  {% endif %}
+  {% for item in site.data.settings.social %}
+    {% if item.icon %}
+    <a href="{{ item.link }}" target="_blank"><i class="fab fa-{{ item.icon }}" aria-hidden="true"></i></a>
+    {% endif %}
+  {% endfor %}
   
-  {% if site.weibo %}
-  <a href="https://weibo.com/{{ site.weibo }}" target="_blank"><i class="fab fa-weibo" aria-hidden="true"></i></a>
-  {% endif %}
-  
-  {% if site.telegram %}
-  <a href="https://t.me/{{ site.telegram }}" target="_blank"><i class="fab fa-telegram" aria-hidden="true"></i></a>
-  {% endif %}
-  
-  {% if site.zhihu %}
-  <a href="https://zhihu.com/people/{{ site.zhihu }}" target="_blank"><i class="fab fa-zhihu" aria-hidden="true"></i></a>
-  {% endif %}
-  
-  {% if site.linkedin %}
-  <a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-  {% endif %}
-  
-  {% if site.mail %}
-  <a href="mailto:{{ site.mail }}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  {% if site.email %}
+  <a href="mailto:{{ site.email }}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
   {% endif %}
   
   <a href=" {{ site.baseurl }}/feed.xml "><i class="fa fa-rss-square" aria-hidden="true"></i></a>
