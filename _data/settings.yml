@@ -13,16 +13,16 @@ social:
   link: https://github.com/professordeng/simple
 - icon: false    # weibo
   link: https://weibo.com/codeng
-- icon: telegram
+- icon: false
   link: https://t.me/jekyll_simple
-- icon: zhihu
+- icon: false
   link: https://zhihu.com/people/professordeng
-- icon: false    # linkedin
+- icon: false
   link: https://linkedin.com/in/professordeng
   
 # Customize site text
-prev: Newer
-next: Older
+prev: Older
+next: Newer
 
 prev_page: Newer
 next_page: Older
@@ -34,4 +34,4 @@ new: New
 
 read_more: Read More
 
-edit: 编辑
+edit: edit
