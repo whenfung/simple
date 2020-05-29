@@ -4,6 +4,6 @@ title: About
 comment: true
 ---
 
-你好，我是 professordeng，为了极大地提高写作和阅读体验，我创建了这个主题。
+Hello, I am professordeng and I created this theme in order to greatly enhance the writing and reading experience.
 
-想要使用本主题，请看 [使用文档](https://professordeng.com/simple/2020/03/01/theme-settings.html)，进入 [主题仓库](https://github.com/professordeng/simple) 下载源码。
+To use this theme, see the [documentation](https://professordeng.com/simple/2020/03/01/theme-settings.html), go to the [theme repository](https://github.com/professordeng/simple) and download the source code.
