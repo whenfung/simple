@@ -13,12 +13,12 @@ title: 资源
 7. [MathJax](https://www.mathjax.org/) : 数学公式编辑
 8. [BiliBili](https://www.bilibili.com/) : iframe 视频支持
 9. [TED](https://www.ted.com/) : iframe 视频支持
-10. 感谢 [gitalk](https://github.com/gitalk/gitalk) 评论系统的支持
-11. 壁纸网站支持 [win4000](http://www.win4000.com/)
-12. bing 壁纸接口支持 [缙哥哥](https://www.dujin.org/3618.html)
+10. [gitalk](https://github.com/gitalk/gitalk) : 评论系统
+11. [win4000](http://www.win4000.com/) : 壁纸
+12. [缙哥哥](https://www.dujin.org/3618.html) : bing 壁纸接口
 13. [Google Analytics](https://analytics.google.com/) 是一个由 Google 所提供的网站流量统计服务。
 14. [Google Search console](https://search.google.com/) 是 Google 开发的一个面向网站管理员的免费工具。网站管理员可以通过该工具了解自己网站的收录情况并优化其网站的曝光率。
-15. 感谢 [mermaid](https://github.com/mermaid-js/mermaid) 提供的流程图渲染支持
+15. [mermaid](https://github.com/mermaid-js/mermaid) : 流程图渲染支持
 16. [setting up a github pages site with jekyll](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)
 17. [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/)
 18. [chrome music LAB](https://musiclab.chromeexperiments.com/Experiments)
