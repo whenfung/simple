@@ -7,10 +7,10 @@ baseurl: ""                          # root directory
 email: professordeng@qq.com
 
 # Path of site resources
-img: /simple/assets/img 
-css: /simple/assets/css  
-js:  /simple/assets/js  
-cdn: https://cdn.jsdelivr.net/gh/professordeng/simple@gh-pages/assets/img
+img: /assets/img
+css: /assets/css
+js:  /assets/js
+cdn: https://cdn.jsdelivr.net/gh/professordeng/professordeng.github.io@main/assets/img
 
 ## Docs: https://pages.github.com/versions/
 plugins:
