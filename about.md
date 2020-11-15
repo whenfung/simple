@@ -8,7 +8,7 @@ comment: true
 
 以下是不同平台下我的账号，感兴趣的可以关注我。
 
-1. [微信公众号](/img/gzh.jpg) ：记录原创文章
+1. [微信公众号]({{ site.cdn }}/gzh.jpg) ：记录原创文章
 2. [github](https://github.com/professordeng) ：我的知识库
 3. [B 站](https://space.bilibili.com/491275843) ：记录原创视频
 4. [知乎](https://www.zhihu.com/people/professordeng) ：充当人生导师
