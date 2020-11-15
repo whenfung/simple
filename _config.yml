@@ -1,7 +1,7 @@
-title: SIMPLE                        # title of the site
-description: A Jekyll Theme          # description of the site
+title: Professordeng                 # title of the site
+description: Professordeng           # description of the site
 url: https://professordeng.com       # domain
-baseurl: /simple                     # root directory
+baseurl: ""                          # root directory
 
 # Email address
 email: professordeng@qq.com
