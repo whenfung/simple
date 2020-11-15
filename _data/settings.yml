@@ -4,6 +4,8 @@ nav:
   url: /
 - name: Archives
   url: /archives.html
+- name: Blog
+  url: /blog
 - name: About
   url: /about.html
 
@@ -30,7 +32,7 @@ next_page: Older
 search_tip: Press enter to search
 searching: Searching
 
-new: New
+blog: Blog
 
 read_more: Read More
 

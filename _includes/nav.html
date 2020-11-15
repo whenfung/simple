@@ -7,6 +7,5 @@
     {% for item in site.data.settings.nav %}
     <a href="{{ item.url | relative_url }}" {% if page.title == item.name %} class="navactive" {% endif %} >{{ item.name }}</a>
     {% endfor %}
-    <a href="https://github.com/professordeng/simple/new/gh-pages/_post">{{ site.data.settings.new }}</a>
   </div>
 </nav>
