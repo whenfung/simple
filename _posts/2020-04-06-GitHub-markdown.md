@@ -92,15 +92,11 @@ title: GitHub 的 markdown 语法
 
 如果你是一个程序员，经常会需要核心代码来说明你的思路，所以为了方便程序员，我同样提供了高亮的代码格式，当公式行太长的时候，会自动水平滚动。例如 `js` 代码段格式如下，当然还包括很多其他编程语言的高亮，详细信息点击 [here](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers)。
 
-```js
- // Example can be run directly in your JavaScript console
- 
- // Create a function that takes two arguments and returns the sum of those arguments
- var adder = new Function("a", "b", "return a + b");
- 
- // Call the function
- adder(2, 6);
- // > 8
+```c
+int main() {
+	printf("Hello world!");
+	return 0;
+}
 ```
 
 ## 任务列表
