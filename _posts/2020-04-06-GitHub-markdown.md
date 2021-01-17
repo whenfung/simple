@@ -66,9 +66,9 @@ title: GitHub 的 markdown 语法
 
 也许文字不能更好地表达你的思想，可能需要图片来辅助，你可以通过 `![file-name](file-url)` 在你的文章中插入图片，效果如下
 
-![大图]({{ site.cdn }}/big.jpg)
+![大图]({{ site.img }}/big.jpg)
 
-![小图]({{ site.cdn }}/small.jpg)
+![小图]({{ site.img }}/small.jpg)
 
 ## 表格
 

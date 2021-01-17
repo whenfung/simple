@@ -4,7 +4,7 @@ layout: default
 
 <div class="post">
   {% if page.img %}
-    <img src="{{ site.cdn }}/{{ page.img }}" class = "bigimg" />
+    <img src="{{ site.img }}/{{ page.img }}" class = "bigimg" />
   {% endif %}
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-meta">{{ page.date | date: '%Y-%m-%d' }} · {{ page.content | strip_html | strip_newlines | remove: " " | size }} words · 

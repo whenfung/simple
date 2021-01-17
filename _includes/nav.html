@@ -5,7 +5,7 @@
   
   <div class="nav-links">
     {% for item in site.data.settings.nav %}
-    <a href="{{ item.url | relative_url }}" {% if page.title == item.name %} class="navactive" {% endif %} >{{ item.name }}</a>
+    <a href="{{ item.url | relative_url }}" {% if page.title == item.name %} class="nav-active" {% endif %} >{{ item.name }}</a>
     {% endfor %}
   </div>
 </nav>
