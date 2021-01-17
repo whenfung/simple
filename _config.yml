@@ -1,16 +1,15 @@
-title: Professordeng                 # title of the site
-description: Professordeng           # description of the site
+title: Simple                        # title of the site
+description: A Jekyll Theme          # description of the site
 url: https://professordeng.com       # domain
-baseurl: ""                          # root directory
+baseurl: "/simple"                   # root directory
 
 # Email address
 email: professordeng@qq.com
 
 # Path of site resources
-img: /assets/img
-css: /assets/css
-js:  /assets/js
-cdn: https://cdn.jsdelivr.net/gh/professordeng/professordeng.github.io@main/assets/img
+img: /simple/assets/img
+css: /simple/assets/css
+js:  /simple/assets/js
 
 ## Docs: https://pages.github.com/versions/
 plugins:
