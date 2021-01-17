@@ -4,8 +4,6 @@ nav:
   url: /
 - name: Archives
   url: /archives.html
-- name: Blog
-  url: /blog
 - name: About
   url: /about.html
 
